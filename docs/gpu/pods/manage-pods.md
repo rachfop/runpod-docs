@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ### CLI
 
-You can pass the enviroment variable `RUNPOD_POD_ID` to identify each Pod.
+You can pass the environment variable `RUNPOD_POD_ID` to identify each Pod.
 
 ```bash
 runpodctl start pod $RUNPOD_POD_ID

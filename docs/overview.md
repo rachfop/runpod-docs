@@ -26,7 +26,7 @@ They are designed for a variety of applications including Dreambooth, Stable Dif
 
 ### Are there additional features?
 
-RunPod also provides a [CLI](docs/references/runpodctl/runpodctl.md) and GraphQL API to automate workflows and manage compute jobs effectively. Users can access multiple points for coding, optimizing, and running AI/ML jobs, including SSH, TCP Ports, and HTTP Ports.
+RunPod also provides a [CLI](docs/references/runpodctl/runpodctl) and GraphQL API to automate workflows and manage compute jobs effectively. Users can access multiple points for coding, optimizing, and running AI/ML jobs, including SSH, TCP Ports, and HTTP Ports.
 We also offer OnDemand and Spot GPUs to suit different compute needs, and Persistent Volumes to ensure the safety of your data even when your pods are stopped.
 Our Cloud Sync feature allows seamless data transfer to any cloud storage.
 
