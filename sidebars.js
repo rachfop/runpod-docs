@@ -109,4 +109,10 @@ module.exports = {
       ],
     },
   ],
+  apiSidebar: [
+    {
+      type: "doc",
+      id: "references/api-endpoints",
+    },
+  ],
 };
