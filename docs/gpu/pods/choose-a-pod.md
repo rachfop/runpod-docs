@@ -1,0 +1,71 @@
+---
+title: Choose a Pod
+description: Learn what goes into choosing a Pod based on your needs.
+sidebar_position: 2
+---
+
+Selecting the appropriate Pod instance is a critical step in planning your RunPod deployment. The choice of VRAM, RAM, vCPU, and storage, both Temporary and Persistent, can significantly impact the performance and efficiency of your project.
+
+This page gives guidances on these variables; however, with these are guidelines and act as a general rule. You should ensure that you plan accordingly to your specific requirements.
+
+### Overview
+
+It's essential to understand the specific needs of your model. You can normally find detailed information in the model card’s description on platforms like Hugging Face or within the `config.json` file of your model.
+
+There are tools that can help in assessing and calculating your model’s specific requirements; for example:
+
+- [Hugging Face's Model Memory Usage Calculator](https://huggingface.co/spaces/hf-accelerate/model-memory-usage)
+- [Vokturz’ Can it run LLM calculator](https://huggingface.co/spaces/Vokturz/can-it-run-llm)
+- [Alexander Smirnov’s VRAM Estimator](https://vram.asmirnov.xyz)
+
+Utilizing these resources will provide you with a clearer picture of what to look for in a Pod.
+
+When transitioning to the selection of your Pod, you should focus on the following primary factors:
+
+- **GPU**
+- **VRAM**
+- **Disk Size**
+
+Each of these factors plays a crucial role in the performance and efficiency of your deployment. By carefully considering these elements, in conjunction with the specific requirements of your project as outlined by your preliminary research, you will be well-equipped to determine the most suitable Pod instance for your needs.
+
+### GPU
+
+The type and power of the GPU will directly affect your project's processing capabilities, especially for tasks involving graphics processing and machine learning.
+
+### Importance
+
+The GPU in your Pod plays a vital role in processing complex algorithms, particularly in areas like data science, video processing, and machine learning. A more powerful GPU can significantly speed up computations and enable the handling of more complex tasks.
+
+### Selection Criteria
+
+- **Task Requirements**: Assess the intensity and nature of the GPU tasks in your project.
+- **Compatibility**: Ensure the GPU is compatible with your software and frameworks.
+- **Energy Efficiency**: Consider the power consumption of the GPU, especially for long-term deployments.
+
+### VRAM
+
+VRAM (Video RAM) is crucial for tasks that require …
+
+### Importance
+
+VRAM is essential for intensive tasks. It serves as the memory for the GPU, allowing it to store and access data quickly. More VRAM can handle …
+
+### Selection Criteria
+
+- **Graphics Intensity**: More VRAM is needed ….
+- **Parallel Processing Needs**: Tasks that require simultaneous processing of multiple data streams benefit from more VRAM.
+- **Future-Proofing**: Opting for more VRAM can make your setup more adaptable to future project requirements.
+
+### Storage
+
+Adequate storage, both temporary and persistent, ensures smooth operation and data management.
+
+### Importance
+
+Disk size, including both temporary and persistent storage, is critical for data storage, caching, and ensuring that your project has the necessary space for its operations.
+
+### Selection Criteria
+
+- **Data Volume**: Estimate the amount of data your project will generate and process.
+- **Speed Requirements**: Faster disk speeds can improve overall system performance.
+- **Data Retention Needs**: Determine the balance between temporary (volatile) and persistent (non-volatile) storage based on your data retention policies.

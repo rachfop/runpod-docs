@@ -1,0 +1,8 @@
+{
+  "label": "Pod",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Manage your pods."
+  }
+}
