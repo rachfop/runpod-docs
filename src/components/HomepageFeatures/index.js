@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "GPU Instances",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/home_1.svg").default,
     description: (
       <>
         <b>GPU Instances</b>{" "}
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: "Serverless GPUs",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("@site/static/img/home_2.svg").default,
     description: (
       <>
         <b>Serverless GPU</b>{" "}
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: "AI Endpoints",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/home_3.svg").default,
     description: (
       <>
         <b>AI Endpoints</b>{" "}

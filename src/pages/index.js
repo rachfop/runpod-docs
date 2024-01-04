@@ -19,9 +19,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/get-started/manage-accounts"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            Get started with RunPod
           </Link>
         </div>
       </div>
