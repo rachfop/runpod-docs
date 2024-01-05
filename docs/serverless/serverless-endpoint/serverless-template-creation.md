@@ -1,13 +1,8 @@
 ---
 title: "Template Creation"
-slug: "serverless-template-creation"
-excerpt: "Templates define basic configurations for deploying workers."
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Oct 31 2023 17:02:51 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Oct 31 2023 20:58:01 GMT+0000 (Coordinated Universal Time)"
+id: "serverless-template-creation"
+description: "Templates define basic configurations for deploying workers."
+
 ---
 
 After logging into RunPod navigate to [Serverless > Custom Template](https://www.runpod.io/console/serverless/user/templates) then press `New Template` to open up the template dialog.
