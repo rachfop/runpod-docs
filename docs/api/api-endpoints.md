@@ -23,9 +23,9 @@ You would first make a request like the following (remember to replace the "xxxx
 
 ```curl
 curl -X POST https://api.runpod.ai/v2/stable-diffusion-v1/run \
--H 'Content-Type: application/json'                             \
--H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'    \
--d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
+    -H 'Content-Type: application/json'                             \
+    -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'    \
+    -d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
 ```
 
 You would get an immediate response that looks like this:
@@ -51,8 +51,8 @@ Note how the last part of the URL is your job ID. You could request that endpoin
 
 ```curl
 curl https://api.runpod.ai/v2/stable-diffusion-v1/status/c80ffee4-f315-4e25-a146-0f3d98cf024b \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
 If your job hasn't been completed, you may get something that looks like this back:
