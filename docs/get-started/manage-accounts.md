@@ -16,7 +16,7 @@ Sign up for an account at [RunPod.io](https://www.runpod.io).
 
 For information on how to send an invitation, see [Invite a user](#invite-a-user).
 
-### Convert personal account to a team account
+## Convert personal account to a team account
 
 You can convert a personal account to a team account at anytime.
 
@@ -35,37 +35,47 @@ To invite a user to your team on RunPod, you'll need a team account.
 
 4. Send a user your invite link and they will be able to go to it to join your team.
 
-#### Role types
+## Role types
 
 The following roles and permissions are available to you:
 
-- **Basic Role**:
-  - **Description**: Limited access, primarily for account usage and existing pod connections.
-  - **Permissions**:
-    - Use the account.
-    - Connect to and use Pods.
-    - Restricted from viewing billing information.
-    - No permissions to start, stop, or create Pods.
+### Basic role
 
-- **Billing Role**:
-  - **Description**: Specialized role focused on managing billing aspects.
-  - **Permissions**:
-    - Access and manage billing information.
-    - Restricted from other account features and Pod management.
+Limited access, primarily for account usage and existing pod connections.
 
--. **Dev Role**:
+**Permissions**:
 
-- **Description**: Enhanced privileges suitable for development tasks.
-- **Permissions**:
-  - All "Basic" role permissions (use account, connect to Pods).
-  - Start, stop, and create Pods.
-  - No access to billing information.
+- Use the account.
+- Connect to and use Pods.
+- Restricted from viewing billing information.
+- No permissions to start, stop, or create Pods.
 
-- **Admin Role**:
-  - **Description**: Full control over the account, ideal for administrators.
-  - **Permissions**:
-    - Complete access to all account features and settings.
-    - Manage billing and access billing information.
-    - Start, stop, and create Pods.
-    - Modify account settings and user permissions.
-    - Full control over all account resources and users.
+### Billing Role
+
+Specialized role focused on managing billing aspects.
+**Permissions**:
+
+- Access and manage billing information.
+- Restricted from other account features and Pod management.
+
+### Dev Role
+
+Enhanced privileges suitable for development tasks.
+
+**Permissions**:
+
+- All "Basic" role permissions (use account, connect to Pods).
+- Start, stop, and create Pods.
+- No access to billing information.
+
+### Admin Role
+
+Full control over the account, ideal for administrators.
+
+**Permissions**:
+
+- Complete access to all account features and settings.
+- Manage billing and access billing information.
+- Start, stop, and create Pods.
+- Modify account settings and user permissions.
+- Full control over all account resources and users.

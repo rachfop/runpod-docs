@@ -4,8 +4,6 @@ description: Get started by setting up your team, inviting users, and managing p
 sidebar_position: 2
 ---
 
-## Billing information
-
 All billing, including per-hour compute and storage billing, is charged per minute.
 
 For more information on billing questions see [Billing FAQ](docs/references/faq/faq.md#billing).

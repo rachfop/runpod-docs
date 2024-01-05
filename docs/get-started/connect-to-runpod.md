@@ -23,4 +23,4 @@ All Pods come with `runpodctl` installed with a Pod-scoped API key, which makes 
 
 ## SDKs
 
-RunPod provides SDKs for Python, Node.js, and Go to for the RunPod API and serverless worker SDK.
+RunPod provides SDKs for Python and Go to for the RunPod API and serverless worker SDK.
