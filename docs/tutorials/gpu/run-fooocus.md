@@ -1,7 +1,7 @@
 ---
 title: Run Fooocus in Jupyter Notebook
 description: Run Fooocus in Jupyter Notebook.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Overview
@@ -36,7 +36,7 @@ The minimal requirement to run Fooocus is:
 
 ```python
 !pip install pygit2==1.12.2
-!pip install opencv-python
+!pip install opencv-python==4.9.0.80
 %cd /workspace
 !git clone https://github.com/lllyasviel/Fooocus.git
 %cd /workspace/Fooocus
@@ -48,7 +48,7 @@ The minimal requirement to run Fooocus is:
 Look for the line:
 
 ```text
-App started successful.Use the app with ....
+App started successful. Use the app with ....
 ```
 
 And select the link.
