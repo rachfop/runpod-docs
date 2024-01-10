@@ -13,7 +13,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "oas": "docusaurus gen-api-docs all",
-    "format": "dprint fmt"
+    "format": "dprint fmt",
+    "lint": "vale docs/"
   },
   "dependencies": {
     "@docusaurus/core": "^3.1.0",

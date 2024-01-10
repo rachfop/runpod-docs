@@ -35,7 +35,7 @@ This will establish a ceiling or upper limit to the number of active workers you
 
 ### GPUs / Worker
 
-The number of GPUs you would like assigned to your worker.\
+The number of GPUs you would like assigned to your worker.
 
 :::note
 
