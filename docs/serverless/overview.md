@@ -4,9 +4,36 @@ description: An overview to Serverless workers.
 sidebar_position: 1
 ---
 
-RunPod offers Serverless GPU computing for AI Inference and Training, allowing users to pay by the second for their compute usage. This flexible platform is designed to scale dynamically, meeting the computational needs of AI workloads from the smallest to the largest scales.
+RunPod offers Serverless GPU computing for AI Inference and Training, allowing users to pay by the second for their compute usage.
+This flexible platform is designed to scale dynamically, meeting the computational needs of AI workloads from the smallest to the largest scales.
 
-Key features of RunPod Serverless GPU include:
+## Key features
+
+Serverless contains the following key features:
+
+- Endpoints
+- Serverless handlers
+- Templates
+
+### Endpoints
+
+A Serverless Endpoint provides the REST API endpoint that serves your application.
+You can create multiple endpoints for your application, each with its own configuration.
+
+### Serverless handlers
+
+Serverless handlers are the core of the Serverless platform.
+They are the code that is executed when a request is made to a Serverless endpoint.
+Handlers are written in Python and can be used to run any code that can be run in a Docker container.
+
+### Templates
+
+Templates are a way to quickly get started with Serverless.
+Use Templates along with your Docker configuration to run your Serverless application.
+
+## Why RunPod Serverless?
+
+you should choose RunPod Serverless instances for the following reasons:
 
 - **AI Inference:** Handle millions of inference requests daily and can be scaled to handle billions, making it an ideal solution for machine learning inference tasks. This allows users to scale their machine learning inference while keeping costs low.
 
