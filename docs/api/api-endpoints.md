@@ -1,5 +1,5 @@
 ---
-title: "API endpoints"
+title: "API Endpoints"
 description: "Interact with your favorite models without managing the pods yourself."
 sidebar_position: 1
 ---
@@ -7,13 +7,30 @@ sidebar_position: 1
 :::note
 
 You will need a RunPod API key which can be generated under your user settings. This API key will identify you for billing purposes, so guard it well!
-You must retrieve your results via the status endpoint within 30 minutes. We do not keep your inputs or outputs longer than that to protect your privacy!
+You must retrieve your results via the status endpoint within 30 minutes.
+We do not keep your inputs or outputs longer than that to protect your privacy!
 
 :::
 
+API Endpoints are Endpoints managed by RunPod that you can use to interact with your favorite models without managing the pods yourself.
+These Endpoints are available to all users.
+
 ## Overview
 
-Our initial API implementation works asynchronously. This means you fire an API request to our endpoint with your input parameters and immediately get a response with a unique job ID. What do I do with this useless response, you say? You can then query the status endpoint and pass it your job ID. The status endpoint will give you the job results when completed.
+The API Endpoint implementation works asynchronously as well as synchronous.
+
+Let's take a look at the differences between the two different implementations.
+
+### Asynchronous Endpoints
+
+Asynchronous endpoints are useful for long-running jobs that you don't want to wait for. You can submit a job and then check back later to see if it's done.
+When you fire an Asynchronous request with the API Endpoint, your input parameters are sent to our endpoint and you immediately get a response with a unique job ID.
+You can then query the response by passing the job ID to the status endpoint. The status endpoint will give you the job results when completed.
+
+### Synchronous Endpoints
+
+Synchronous endpoints are useful for short-running jobs that you want to wait for.
+You can submit a job and get the results back immediately.
 
 Let's take the Stable Diffusion v1 inference endpoint, for example.
 
@@ -23,8 +40,8 @@ You would first make a request like the following (remember to replace the "xxxx
 
 ```curl
 curl -X POST https://api.runpod.ai/v2/stable-diffusion-v1/run \
-    -H 'Content-Type: application/json'                             \
-    -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'    \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' \
     -d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
 ```
 
@@ -37,17 +54,19 @@ You would get an immediate response that looks like this:
 }
 ```
 
-In this example, your job ID would be "c80ffee4-f315-4e25-a146-0f3d98cf024b". You get a new one for each job, and it is a unique identifier for your job.
+In this example, your job ID would be "c80ffee4-f315-4e25-a146-0f3d98cf024b".
+You get a new one for each job, and it is a unique identifier for your job.
 
 ### Check the status of your job
 
 You haven't gotten any output, so you must make an additional call to the status endpoint after some time. Your status endpoint uses the job ID to route to the correct job status. In this case, the status endpoint is
 
-```
+```command
 https://api.runpod.ai/v1/stable-diffusion-v1/status/c80ffee4-f315-4e25-a146-0f3d98cf024b
 ```
 
-Note how the last part of the URL is your job ID. You could request that endpoint like so. Remember to use your API key for this request too!
+Note how the last part of the URL is your job ID. You could request that endpoint like so.
+Remember to use your API key for this request too!
 
 ```curl
 curl https://api.runpod.ai/v2/stable-diffusion-v1/status/c80ffee4-f315-4e25-a146-0f3d98cf024b \
@@ -97,7 +116,11 @@ Eventually, you will get the final results of your job. They would look somethin
 }
 ```
 
-_**Note: You must retrieve your results via the status endpoint within 1 hour. We do not keep your inputs or outputs longer than that to protect your privacy!**_
+:::note
+
+You must retrieve your results via the status endpoint within 1 hour. We do not keep your inputs or outputs longer than that to protect your privacy!
+
+:::
 
 ### Get your stuff
 
@@ -105,10 +128,11 @@ Note how you don't get the images directly in the output. The output contains th
 
 You've successfully generated your first images with our Stable Diffusion API!
 
-If you want descriptions for all parameters and code examples past curl, read on!
-
 ### Rate Limit
 
-`/run` - 1000 requests every 10s
+Rate limits are enforced on a per-user basis.
+If you exceed the rate limit, you will receive a `429` error code.
 
-`/runsync` - 2000 requests every 10s
+`/run` - 1000 requests every 10s.
+
+`/runsync` - 2000 requests every 10s.
