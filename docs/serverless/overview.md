@@ -33,7 +33,7 @@ Use Templates along with your Docker configuration to run your Serverless applic
 
 ## Why RunPod Serverless?
 
-you should choose RunPod Serverless instances for the following reasons:
+You should choose RunPod Serverless instances for the following reasons:
 
 - **AI Inference:** Handle millions of inference requests daily and can be scaled to handle billions, making it an ideal solution for machine learning inference tasks. This allows users to scale their machine learning inference while keeping costs low.
 

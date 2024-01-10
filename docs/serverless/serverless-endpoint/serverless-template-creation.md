@@ -2,7 +2,6 @@
 title: "Template Creation"
 id: "serverless-template-creation"
 description: "Templates define basic configurations for deploying workers."
-
 ---
 
 After logging into RunPod navigate to [Serverless > Custom Template](https://www.runpod.io/console/serverless/user/templates) then press `New Template` to open up the template dialog.
