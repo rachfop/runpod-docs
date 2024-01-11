@@ -7,13 +7,13 @@ The following is a reference sheet to some of the most commonly used Docker comm
 
 ## Login
 
+Log in to a registry (like Docker Hub) from the CLI.
+This saves credentials locally.
+
 ```command
 docker login
 docker login -u myusername
 ```
-
-Log in to a registry (like Docker Hub) from the CLI.
-This saves credentials locally.
 
 ## Images
 

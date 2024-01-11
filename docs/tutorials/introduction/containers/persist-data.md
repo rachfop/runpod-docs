@@ -3,6 +3,7 @@ title: Persist data outside of containers
 sidebar_position: 2
 description: Learn to persist data outside of containers.
 ---
+
 In the previous step, you created a Dockerfile and executed a command. Now, you'll learn how to persist data outside of containers.
 
 ## Why persist data outside of a container?
@@ -74,7 +75,6 @@ Anything written to `/data` inside the container will now be written to the `dat
 This allows the data to persist.
 Once the container exits, the date output file is safely stored on the host volume.
 
-
 After the container exits, we can exec into another container sharing the volume to see the persisted data file:
 
 ```command
@@ -86,4 +86,4 @@ This runs a new busybox container and also mounts the `date-volume`.
 - Using the same -`v date-volume:/data mount` point maps the external volume dir to `/data` again.
 - This allows the new container to access the persistent date file that the first container wrote.
 - The `cat /data/current_date.txt` command prints out the file with the date output from the first container.
-- The `--rm `flag removes the container after running so we don't accumulate stopped containers.
+- The `--rm`flag removes the container after running so we don't accumulate stopped containers.

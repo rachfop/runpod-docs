@@ -31,6 +31,7 @@ echo "The time is: $(date)"
 :::note
 
 While we named this script `entrypoint.sh` you will see a variety of naming conventions; such as:
+
 - `start.sh`
 - `CMD.sh`
 - `entry_path.sh`
