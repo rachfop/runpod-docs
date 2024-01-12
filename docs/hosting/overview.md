@@ -6,12 +6,15 @@ sidebar_position: 1
 
 ## RunPod GPU Hosting Opportunity
 
-RunPod offers our clients a diverse range of GPUs, made possible through our proprietary servers and collaboration with trusted community members. If you're interested in integrating your hardware into the RunPod ecosystem, follow the steps below.
+RunPod offers our clients a diverse range of GPUs, made possible through our proprietary servers and collaboration with trusted community members.
+If you're interested in integrating your hardware into the RunPod ecosystem, follow the steps below.
 
 ## How to Join as a Host:
 
 1. Check Eligibility: Make sure you adhere to our [minimum requirements](https://docs.runpod.io/docs/partner-requirements).
-2. Connect with Us: Currently, we onboard hosts through a manual vetting process. If you have high-quality machines that satisfy our hosting requirements, and at least 20 GPUs in total, please fill out [this form](https://share.hsforms.com/1GYpMeNlSQc6n11toAlgNngecykq). Then, contact us on discord [here](https://discord.gg/7nr9Jy9FYU).
+2. Connect with Us: Currently, we onboard hosts through a manual vetting process.
+   If you have high-quality machines that satisfy our hosting requirements, and at least 20 GPUs in total, please fill out [this form](https://share.hsforms.com/1GYpMeNlSQc6n11toAlgNngecykq).
+   Then, contact us on discord [here](https://discord.gg/7nr9Jy9FYU).
 
 ## Additional Hosting Information:
 
