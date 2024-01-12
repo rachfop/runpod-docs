@@ -1,13 +1,7 @@
 ---
 title: "Using Your Endpoint"
-slug: "serverless-usage"
-excerpt: "The method in which jobs are submitted and returned."
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Aug 01 2023 13:42:10 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Oct 31 2023 23:16:24 GMT+0000 (Coordinated Universal Time)"
+id: "serverless-usage"
+description: "The method in which jobs are submitted and returned."
 ---
 
 With a successful custom endpoint deployed, you are nearly ready to make a job request. Let's start by constructing our request body that will be submitted.
