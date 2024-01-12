@@ -8,11 +8,11 @@ After logging into RunPod navigate to [Serverless > Custom Template](https://www
 
 ![](https://files.readme.io/99cd8c7-image.png)
 
-### Template Name
+### Template name
 
 Provide a name for your template; this can be anything you would like and is used to organize and locate your template as you add more.
 
-### Container Image
+### Container image
 
 Location to the container image. This could be from docker-hub or any other repository. You can use the following here if you didn't build your own worker:
 
@@ -22,14 +22,14 @@ runpod/serverless-hello-world
 
 Link container credentials for private repositories. These can be configured in your user settings menu.
 
-### Docker Command
+### Docker command
 
 Command to run on container startup; by default, the command _(CMD)_ defined in the Dockerfile will be used.
 
-### Container Disk
+### Container disk
 
 Amount of disk required to run your worker. This will depend on how your model and accompanying files are in the container.
 
-### Environment Variables
+### Environment variables
 
 Use these to pass config and secrets to your container.

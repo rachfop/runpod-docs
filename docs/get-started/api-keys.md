@@ -4,7 +4,7 @@ description: "Learn to manage API keys for your account and team."
 sidebar_position: 4
 ---
 
-API keys are used to authenticate requests to RunPod.
+API keys authenticate requests to RunPod.
 
 ## Generate
 

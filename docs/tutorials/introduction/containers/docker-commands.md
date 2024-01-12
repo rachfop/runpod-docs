@@ -81,11 +81,3 @@ Useful for debugging/inspecting containers:
 docker exec
 docker exec mycontainer ls -l /etc     # List files in container
 ```
-
-## Docker Compose
-
-Starts and runs multi-container app stacks defined in a compose file.
-
-```command
-docker compose up     # Start multi container app stack
-```
