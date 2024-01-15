@@ -3,6 +3,8 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 
 import path from "path";
 import { themes as prismThemes } from "prism-react-renderer";
@@ -206,3 +208,4 @@ const config = {
 };
 
 export default config;
+injectSpeedInsights();
