@@ -196,6 +196,11 @@ const config = {
       "data-project-logo": "https://avatars.githubusercontent.com/u/95939477?s=200&v=4",
       async: true,
     },
+    {
+      src: "./src/scripts/simpleAnalytics.js",
+      async: true,
+      defer: true,
+    },
   ],
   plugins: [],
 };
