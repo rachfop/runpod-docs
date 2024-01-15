@@ -197,7 +197,7 @@ const config = {
       async: true,
     },
     {
-      src: "./src/scripts/simpleAnalytics.js",
+      src: "https://scripts.simpleanalyticscdn.com/latest.js",
       async: true,
       defer: true,
     },
