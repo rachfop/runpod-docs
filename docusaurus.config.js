@@ -108,9 +108,8 @@ const config = {
               label: "Documentation",
             },
             {
-              type: "docSidebar",
               position: "left",
-              sidebarId: "apiSidebar",
+              href: "https://docs.runpod.io/reference/runpod-apis",
               collapsed: false,
               label: "API Endpoints",
             },
