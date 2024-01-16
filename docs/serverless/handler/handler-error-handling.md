@@ -17,15 +17,19 @@ By default, if an exception is raised within your handler function, the runpod S
 There are times when you may want to flag a job as failed and return an error. For example, if your job requires a _seed_ key to be included as part of the input, you might first validate the job input and then return an error indicating that this field was missing. This might look like the following:
 
 ```python
-import runpod 
+import runpod
+
 
 def handler(job):
-  job_input = job["input"]
-  
-  if not job_input.get("seed", False):
-    return {"error": "Input is missing the 'seed' key, please include a seed and try your request again"}
-  
-  return "Everything looks good!"
+    job_input = job["input"]
+
+    if not job_input.get("seed", False):
+        return {
+            "error": "Input is missing the 'seed' key, please include a seed and try your request again"
+        }
+
+    return "Everything looks good!"
+
 
 runpod.serverless.start({"handler": handler})
 ```

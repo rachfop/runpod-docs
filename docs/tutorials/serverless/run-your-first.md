@@ -106,10 +106,11 @@ Finally, to view your results, decode the base64 image from the output. Here's h
 import json
 import base64
 
+
 def decode_and_save_image(json_file_path, output_image_path):
     try:
         # Reading the JSON file
-        with open(json_file_path, 'r') as file:
+        with open(json_file_path, "r") as file:
             data = json.load(file)
 
         # Extracting the base64 encoded image data
@@ -125,15 +126,18 @@ def decode_and_save_image(json_file_path, output_image_path):
         print(f"Image successfully decoded and saved as '{output_image_path}'.")
 
     except FileNotFoundError:
-        print("File not found. Please ensure the JSON file exists in the specified path.")
+        print(
+            "File not found. Please ensure the JSON file exists in the specified path."
+        )
     except KeyError as e:
         print(f"Error in JSON structure: {e}")
     except Exception as e:
         print(f"An error occurred: {e}")
 
+
 # Usage
-json_file_path = 'output.json'  # Path to your JSON file
-output_image_path = 'decoded_image.png'  # Desired path for the output image
+json_file_path = "output.json"  # Path to your JSON file
+output_image_path = "decoded_image.png"  # Desired path for the output image
 
 decode_and_save_image(json_file_path, output_image_path)
 ```

@@ -6,7 +6,7 @@ hidden: false
 
 Written in Python, the handler function is responsible for processing submitted inputs and generating the resulting output. When developing your handler, you can do so locally on your PC or remotely on a RunPod GPU instance. Example handler functions can be found within the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
 
-## Job Input
+## Job input
 
 Before we look at the handler, it is essential first to understand what a job request input will look like; later, we will cover all of the input options in detail; for now, what is essential is that your handler should be expecting a JSON dictionary to be passed in. At a minimum, the input will be formatted as such:
 
@@ -30,9 +30,7 @@ import runpod # Required.
 
 def handler(job):
   job_input = job["input"] # Access the input from the request.
-  
   # Add your custom code here.
-  
 	return "Your job results"
 
 runpod.serverless.start({ "handler": handler}) # Required.

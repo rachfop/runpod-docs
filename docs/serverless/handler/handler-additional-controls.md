@@ -1,13 +1,5 @@
 ---
 title: "Additional Controls"
-slug: "handler-additional-controls"
-excerpt: ""
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Oct 31 2023 14:08:18 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Oct 31 2023 15:43:36 GMT+0000 (Coordinated Universal Time)"
 ---
 
 ## Progress Updates
@@ -20,7 +12,7 @@ import runpod
 def handler(job):
   for update_number in range(0,3):
     runpod.serverless.progress_update(job, f"Update {update_number}/3")
-    
+
  return "done"
 
 runpod.serverless.start({"handler": handler})

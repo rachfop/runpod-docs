@@ -27,19 +27,17 @@ curl -X POST https://api.runpod.ai/v2/<your-api-id>/runsync \
 -H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'    \
 -d '{"input": {<your-input-json}}'
 ```
-```python Python
+```python
 # this requires the installation of runpod-python
 # with `pip install runpod-python` beforehand
 
 import runpod
 
-runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx" # you can find this in settings
+runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # you can find this in settings
 
 endpoint = runpod.Endpoint("ENDPOINT_ID")
 
-run_request = endpoint.run_sync(
-    {"your_model_input_key": "your_model_input_value"}
-)
+run_request = endpoint.run_sync({"your_model_input_key": "your_model_input_value"})
 ```
 <!-- dprint-ignore-end -->
 
@@ -58,7 +56,7 @@ curl -X POST https://api.runpod.ai/v2/<your-api-id>/runsync \
 
 import runpod
 
-runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx" # you can find this in settings
+runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # you can find this in settings
 
 endpoint = runpod.Endpoint("ENDPOINT_ID")
 
@@ -112,13 +110,11 @@ curl -X POST https://api.runpod.ai/v2/<your-api-id>/run \
 
 import runpod
 
-runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx" # you can find this in settings
+runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # you can find this in settings
 
 endpoint = runpod.Endpoint("ENDPOINT_ID")
 
-run_request = endpoint.run(
-   {"your_model_input_key": "your_model_input_value"}
-)
+run_request = endpoint.run({"your_model_input_key": "your_model_input_value"})
 
 print(run_request.status())
 ```
@@ -139,7 +135,7 @@ curl -X POST https://api.runpod.ai/v2/<your-api-id>/run \
 
 import runpod
 
-runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx" # you can find this in settings
+runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # you can find this in settings
 
 endpoint = runpod.Endpoint("ENDPOINT_ID")
 
@@ -176,7 +172,7 @@ curl https://api.runpod.ai/v2/<your-api-id>/status/<your-status-id>
 
 import runpod
 
-runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx" # you can find this in settings
+runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # you can find this in settings
 
 endpoint = runpod.Endpoint("ENDPOINT_ID")
 
@@ -194,7 +190,9 @@ runpod.api_key = "xxxxxxxxxxxxxxxxxxxxxx"  # Replace with your API key
 client = runpod.endpoint.runner.RunPodClient()
 
 
-job = runpod.endpoint.Job(endpoint_id="your_endpoint_id", job_id="your_job_id", client=client)
+job = runpod.endpoint.Job(
+    endpoint_id="your_endpoint_id", job_id="your_job_id", client=client
+)
 
 print(job.status())
 ```

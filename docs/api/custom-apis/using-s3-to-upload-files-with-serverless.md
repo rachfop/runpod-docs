@@ -29,9 +29,11 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
    from runpod.serverless.utils import rp_upload
    import runpod
 
+
    def handler(job):
-       image_url = rp_upload.upload_image(job['id'], "./image.png")
+       image_url = rp_upload.upload_image(job["id"], "./image.png")
        return [image_url]
+
 
    runpod.serverless.start({"handler": handler})
    ```
@@ -59,25 +61,20 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
    Editors note : your request **must** contain an input key, and it must be a json item, so ensure you put that, a sample request has been provided below
 
 <!-- dprint-ignore-start -->
-   ```python Python
+   ```python
    import requests
 
    endpoint = "https://api.runpod.ai/v2/xxxxxxxxx/run"
 
-   headers = {
-     "Content-Type": "application/json",
-     "Authorization": "Bearer XXXXXXXXXXXXX"
-   }
+   headers = {"Content-Type": "application/json", "Authorization": "Bearer XXXXXXXXXXXXX"}
 
    # Define your inputs
    # an input value must be present, even if it is unused,
    # and it must be a json value
-   input_data = {
-       "input": {"inp":"this is an example input"}
-   }
+   input_data = {"input": {"inp": "this is an example input"}}
 
    response = requests.post(endpoint, json=input_data, headers=headers)
-   json     = response.json()
+   json = response.json()
 
    # the json will be similar to
    # {'id': 'e3d2e250-ea81-4074-9838-1c52d006ddcf', 'status': 'IN_QUEUE'}
@@ -88,7 +85,9 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
 
 <!-- dprint-ignore-start -->
    ```python
-   response = requests.get("https://api.runpod.ai/v2/xxxxxxxxx/status/" + json['id'], headers=headers)
+   response = requests.get(
+       "https://api.runpod.ai/v2/xxxxxxxxx/status/" + json["id"], headers=headers
+   )
    response.json()
    ```
 <!-- dprint-ignore-end -->
@@ -98,11 +97,11 @@ Here's an example response, after the request completes
 <!-- dprint-ignore-start -->
    ```python JSON
    {
-     'delayTime': 86588,
-     'executionTime': 1563,
-     'id': 'e3d2e250-ea81-4074-9838-1c52d006ddcf',
-     'output': ['https://your-bucket.s3.us-west-004.backblazeb2.com/your-image.png'],
-     'status': 'COMPLETED'
+       "delayTime": 86588,
+       "executionTime": 1563,
+       "id": "e3d2e250-ea81-4074-9838-1c52d006ddcf",
+       "output": ["https://your-bucket.s3.us-west-004.backblazeb2.com/your-image.png"],
+       "status": "COMPLETED",
    }
    ```
 <!-- dprint-ignore-end -->
