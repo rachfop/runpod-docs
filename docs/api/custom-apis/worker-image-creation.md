@@ -1,21 +1,14 @@
 ---
 title: "Worker Image Creation"
-slug: "worker-image-creation"
-excerpt: "Workers are Docker containers that can be easily configured to run your jobs."
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Mar 28 2023 23:39:48 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Nov 04 2023 00:55:46 GMT+0000 (Coordinated Universal Time)"
+id: "worker-image-creation"
 ---
 
 It's easy to create a container image using our [Python SDK](https://github.com/runpod/runpod-python). For a simple "Hello, world!" example, you can check out this [repository](https://github.com/runpod/serverless-workers/tree/main/Tutorials/helloworld).
 
 This is the Dockerfile for Hello, World:
 
-<!-- dprint-ignore-start -->
-```python
+
+```bash
 from python:3.11.1-buster
 
 WORKDIR /
@@ -26,7 +19,6 @@ ADD handler.py .
 
 CMD [ "python", "-u", "/handler.py" ]
 ```
-<!-- dprint-ignore-end -->
 
 Your Dockerfile should package all dependencies required to run your code. You should also bake in any models that you wish to have cached between jobs. You should aim to build a Docker container that is under 15-20GB maximum. **Be advised that we do not give the elevated privileges that enable Docker-in-Docker, so the container will need to be built off of Runpod.**
 
@@ -38,9 +30,10 @@ import runpod
 import os
 import time
 
-sleep_time = int(os.environ.get('SLEEP_TIME', 3))
+sleep_time = int(os.environ.get("SLEEP_TIME", 3))
 
 ## load your model(s) into vram here
+
 
 def handler(event):
     print(event)
@@ -54,9 +47,7 @@ def handler(event):
     return "Hello World"
 
 
-runpod.serverless.start({
-    "handler": handler
-})
+runpod.serverless.start({"handler": handler})
 ```
 <!-- dprint-ignore-end -->
 

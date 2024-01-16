@@ -55,3 +55,18 @@ To lint the entire repo, run:
 ```command
 yarn lint
 ```
+
+
+## Format Python code examples
+
+Install `blacken-docs`.
+
+```bash
+python -m pip install blacken-docs
+```
+
+Run the formatter.
+
+```bash
+git ls-files -z -- '*.md' | xargs -0 blacken-docs
+```

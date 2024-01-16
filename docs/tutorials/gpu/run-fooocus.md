@@ -34,7 +34,7 @@ The minimal requirement to run Fooocus is:
 2. In the Jupyter Lab file browser, select **File > New > Notebook**.
 3. In the first cell, paste the following and then run the Notebook.
 
-```python
+```bash
 !pip install pygit2==1.12.2
 !pip install opencv-python==4.9.0.80
 %cd /workspace

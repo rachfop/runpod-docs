@@ -26,14 +26,16 @@ You will need to have the RunPod Python SDK installed; this can be done by runni
 ```python
 # your_handler.py
 
-import runpod # Required.
+import runpod  # Required.
+
 
 def handler(job):
-  job_input = job["input"] # Access the input from the request.
-  # Add your custom code here.
-	return "Your job results"
+    job_input = job["input"]  # Access the input from the request.
+    # Add your custom code here.
+    return "Your job results"
 
-runpod.serverless.start({ "handler": handler}) # Required.
+
+runpod.serverless.start({"handler": handler})  # Required.
 ```
 
 > 🚧 Keep setup processes and functions outside of your handler function. For example, if you are running models make sure they are loaded into VRAM prior to calling `serverless.start` with your handler function.
@@ -48,7 +50,7 @@ python your_handler.py --test_input '{"input": {"prompt": "The quick brown fox j
 
 Additionally, you can launch a local test server that will provide you with an endpoint to send requests to by calling your file with the `--rp_serve_api` argument. See our [blog post](https://blog.runpod.io/workers-local-api-server-introduced-with-runpod-python-0-9-13/) for additional examples.
 
-```python Bash
+```bash
 python your_handler.py --rp_serve_api
 ```
 

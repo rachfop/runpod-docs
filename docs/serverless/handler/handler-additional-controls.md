@@ -9,11 +9,13 @@ Progress updates can be sent out from your worker while a job is in progress. Pr
 ```python
 import runpod
 
-def handler(job):
-  for update_number in range(0,3):
-    runpod.serverless.progress_update(job, f"Update {update_number}/3")
 
- return "done"
+def handler(job):
+    for update_number in range(0, 3):
+        runpod.serverless.progress_update(job, f"Update {update_number}/3")
+
+    return "done"
+
 
 runpod.serverless.start({"handler": handler})
 ```
@@ -24,15 +26,8 @@ When completing long-running job requests or complicated requests that involve a
 
 ```python
 # Requires runpod python version 0.9.0+
-
 def your_handler(job):
-    .
-    .
-    ...
-    Your handler functionality here.
-    ...
-    .
-    .
+    # Your handler functionality here.
     return {"refresh_worker": True, "job_results": "can be anything"}
 ```
 

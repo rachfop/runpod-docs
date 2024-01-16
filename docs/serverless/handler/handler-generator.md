@@ -15,15 +15,19 @@ RunPod provides a robust streaming feature that enables users to receive real-ti
 ```python
 import runpod
 
+
 def generator_handler(job):
-	for count in range(3):
-    result = f"This is the {count} generated output."
-    yield result 
-    
-runpod.serverless.start({
-  "handler": generator_handler, # Required
-  "return_aggregate_stream": True # Optional, results available via /run
-})
+    for count in range(3):
+        result = f"This is the {count} generated output."
+        yield result
+
+
+runpod.serverless.start(
+    {
+        "handler": generator_handler,  # Required
+        "return_aggregate_stream": True,  # Optional, results available via /run
+    }
+)
 ```
 
 ### Return Aggregate Stream
