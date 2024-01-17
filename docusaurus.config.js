@@ -36,6 +36,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  
 
   presets: [
     [
@@ -84,13 +85,34 @@ const config = {
       },
     ],
   ],
+  
+  themeConfig: {
+    algolia: {
+      appId: 'LZTDWL431O',
+      apiKey: '579a75d22533b970ddf821f8fd0389d9',
+      indexName: 'runpod-vercel',
+      insights: true,
+      debug: false,
+      // Optional: see doc section below
+      contextualSearch: true,
 
-  themeConfig:
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      externalUrlRegex: 'external\\.com|domain\\.com',
 
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    (
-      {
-        // Replace with your project's social card
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+    },
+
+
         image: "img/docusaurus-social-card.jpg",
         navbar: {
           title: "RunPod",
@@ -187,8 +209,8 @@ const config = {
             hideable: true,
           },
         },
-      }
-    ),
+      },
+
   scripts: [
     {
       src: "https://widget.kapa.ai/kapa-widget.bundle.js",
