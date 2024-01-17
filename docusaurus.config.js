@@ -132,7 +132,7 @@ const config = {
               items: [
                 {
                   label: "Overview",
-                  to: "/docs/get-started/overview",
+                  to: "/overview",
                 },
               ],
             },
