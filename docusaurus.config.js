@@ -80,9 +80,10 @@ const config = {
   
   themeConfig: {
     algolia: {
-      appId: 'LZTDWL431O',
-      apiKey: '579a75d22533b970ddf821f8fd0389d9',
-      indexName: 'runpod-vercel',
+      appId: "LZTDWL431O",
+      apiKey: "579a75d22533b970ddf821f8fd0389d9",
+      indexName: "runpod-vercel",
+      insights: true,
     },
 
 
