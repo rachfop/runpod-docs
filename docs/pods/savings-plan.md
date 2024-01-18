@@ -1,6 +1,7 @@
 ---
 title: "Savings Plans"
 description: "Cost savings for Your RunPod deployments."
+sidebar_position: 9
 ---
 
 Savings Plans, are a powerful cost-saving feature designed to optimize your RunPod experience.

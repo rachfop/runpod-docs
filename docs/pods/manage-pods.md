@@ -1,11 +1,18 @@
 ---
 title: Manage Pods
 description: Manage your Pod.
+id: manage-pods
 sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+:::note
+
+When building a docker image for RunPod be sure to use the flag `--platform linux/amd64,linux/arm64` to ensure it's compatible with the platform.
+
+:::
 
 ## Start a Pod
 

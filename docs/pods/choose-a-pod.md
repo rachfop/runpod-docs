@@ -1,7 +1,7 @@
 ---
 title: Choose a Pod
 description: Learn what goes into choosing a Pod based on your needs.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 Selecting the appropriate Pod instance is a critical step in planning your RunPod deployment. The choice of VRAM, RAM, vCPU, and storage, both Temporary and Persistent, can significantly impact the performance and efficiency of your project.
@@ -44,15 +44,15 @@ The GPU in your Pod plays a vital role in processing complex algorithms, particu
 
 ### VRAM
 
-VRAM (Video RAM) is crucial for tasks that require …
+VRAM (Video RAM) is crucial for tasks that require heavy graphical processing and rendering. It is the dedicated memory used by your GPU to store image data that will be displayed on your screen.
 
 ### Importance
 
-VRAM is essential for intensive tasks. It serves as the memory for the GPU, allowing it to store and access data quickly. More VRAM can handle …
+VRAM is essential for intensive tasks. It serves as the memory for the GPU, allowing it to store and access data quickly. More VRAM can handle larger textures and more complex graphics, which is crucial for high-resolution displays and advanced 3D rendering.
 
 ### Selection Criteria
 
-- **Graphics Intensity**: More VRAM is needed ….
+- **Graphics Intensity**: More VRAM is needed for graphically intensive tasks such as 3D rendering, gaming, or AI model training that involves large datasets.
 - **Parallel Processing Needs**: Tasks that require simultaneous processing of multiple data streams benefit from more VRAM.
 - **Future-Proofing**: Opting for more VRAM can make your setup more adaptable to future project requirements.
 
