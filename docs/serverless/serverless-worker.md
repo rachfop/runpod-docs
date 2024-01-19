@@ -1,13 +1,7 @@
 ---
 title: " The Worker"
-slug: "serverless-worker"
-excerpt: "Packaged code that will be receive and execute API submitted requests."
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Aug 01 2023 13:27:10 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Oct 31 2023 23:28:51 GMT+0000 (Coordinated Universal Time)"
+id: "serverless-worker"
+description: "Packaged code that will be receive and execute API submitted requests."
 ---
 
 Once you have a functional handler, the next step will be to package it into a Docker image that can be deployed as a scalable serverless worker. This is accomplished by defining a docker file to import everything required to run your handler. Example docker files are in the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).

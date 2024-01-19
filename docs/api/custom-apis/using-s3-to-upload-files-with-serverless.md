@@ -1,13 +1,6 @@
 ---
 title: "Using S3 to upload images with serverless"
-slug: "using-s3-to-upload-files-with-serverless"
-excerpt: "Here's how you can use S3 to upload files with serverless, and get urls to the outputs as files"
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Tue Apr 18 2023 16:07:56 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
+id: "using-s3-to-upload-files-with-serverless"
 ---
 
 ## Uploading to an S3 bucket has 2 major steps
@@ -24,7 +17,7 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
 
 2. Now in your handler function, here's some example code that can upload to an s3 bucket, the code uploads the image `image.png` to an s3 bucket, and returns a url to the image
 
-<!-- dprint-ignore-start -->
+
    ```python
    from runpod.serverless.utils import rp_upload
    import runpod
@@ -37,9 +30,9 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
 
    runpod.serverless.start({"handler": handler})
    ```
-<!-- dprint-ignore-end -->
 
-3. now package your code in a similar manner as described by the [Worker Image Creation](https://docs.runpod.io/docs/worker-image-creation) and [Template Creation](https://docs.runpod.io/docs/template-creation) steps
+
+3. now package your code in a similar manner as described by the [Worker Image Creation](/api/custom-apis/worker-image-creation).
 
 ## Setting the environment variables
 
@@ -60,7 +53,7 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
 1. Now when you access your api you should see the image as an output uploaded to s3, here's a sample input\
    Editors note : your request **must** contain an input key, and it must be a json item, so ensure you put that, a sample request has been provided below
 
-<!-- dprint-ignore-start -->
+
    ```python
    import requests
 
@@ -79,23 +72,23 @@ updatedAt: "Thu Jun 22 2023 08:47:46 GMT+0000 (Coordinated Universal Time)"
    # the json will be similar to
    # {'id': 'e3d2e250-ea81-4074-9838-1c52d006ddcf', 'status': 'IN_QUEUE'}
    ```
-<!-- dprint-ignore-end -->
+
 
 2. Here's an example output request, with the image in output
 
-<!-- dprint-ignore-start -->
+
    ```python
    response = requests.get(
        "https://api.runpod.ai/v2/xxxxxxxxx/status/" + json["id"], headers=headers
    )
    response.json()
    ```
-<!-- dprint-ignore-end -->
+
 
 Here's an example response, after the request completes
 
-<!-- dprint-ignore-start -->
-   ```python JSON
+
+   ```json
    {
        "delayTime": 86588,
        "executionTime": 1563,
@@ -104,4 +97,4 @@ Here's an example response, after the request completes
        "status": "COMPLETED",
    }
    ```
-<!-- dprint-ignore-end -->
+

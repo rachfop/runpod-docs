@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/get-started/manage-accounts"
+            to="/get-started/manage-accounts"
           >
             Get started with RunPod
           </Link>

@@ -77,16 +77,14 @@ const config = {
       },
     ],
   ],
-  
+
   themeConfig: {
     algolia: {
       appId: "LZTDWL431O",
-      apiKey: "579a75d22533b970ddf821f8fd0389d9",
+      apiKey: "42b27b88e9b1049fbf9a678640aca766",
       indexName: "runpod-vercel",
-      insights: true,
+      //insights: true,
     },
-
-
         image: "img/docusaurus-social-card.jpg",
         navbar: {
           title: "RunPod",
@@ -198,6 +196,9 @@ const config = {
       src: "https://scripts.simpleanalyticscdn.com/latest.js",
       async: true,
       defer: true,
+    },
+    {
+      src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3"
     },
   ],
   plugins: [],

@@ -1,6 +1,6 @@
 ---
 title: "Worker Image Creation"
-id: "worker-image-creation"
+id: "s"
 ---
 
 It's easy to create a container image using our [Python SDK](https://github.com/runpod/runpod-python). For a simple "Hello, world!" example, you can check out this [repository](https://github.com/runpod/serverless-workers/tree/main/Tutorials/helloworld).

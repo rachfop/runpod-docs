@@ -15,4 +15,4 @@ On RunPod you can configure the following:
 - Open/Expose HTTP/TCP ports
 - Persistent Storage Options
 
-To get started, see how to [Choose a Pod](/pods/choosing-a-pod) then see the instructions on [Manage Pods](/pods/manage-pods).
+To get started, see how to [Choose a Pod](/pods/choose-a-pod) then see the instructions on [Manage Pods](/pods/manage-pods).
