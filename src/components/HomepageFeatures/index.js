@@ -4,33 +4,33 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "GPU Instances",
+    title: "Pods",
     Svg: require("@site/static/img/home_1.svg").default,
     description: (
       <>
-        <b>GPU Instances</b>{" "}
+        <b>Pods</b>{" "}
         offer fast deployment of container-based GPU instances, with Secure Cloud for high reliability and security, and
         Community Cloud for a secure peer-to-peer network.
       </>
     ),
   },
   {
-    title: "Serverless GPUs",
+    title: "Serverless",
     Svg: require("@site/static/img/home_2.svg").default,
     description: (
       <>
-        <b>Serverless GPU</b>{" "}
+        <b>Serverless</b>{" "}
         service provides pay-per-second serverless computing with autoscaling, quick start times, and robust security in
         its Secure Cloud.
       </>
     ),
   },
   {
-    title: "AI Endpoints",
+    title: "AI APIs",
     Svg: require("@site/static/img/home_3.svg").default,
     description: (
       <>
-        <b>AI Endpoints</b>{" "}
+        <b>AI APIs</b>{" "}
         are scalable and managed services tailored for various applications like Dreambooth and Stable Diffusion,
         ensuring efficient handling of diverse workloads.
       </>
