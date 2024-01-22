@@ -1,5 +1,6 @@
 ---
 title: "Additional Controls"
+sidebar_position: 5
 ---
 
 ## Progress Updates

@@ -12,7 +12,7 @@ There are many ways to interact with RunPod:
 
 ## Web interface
 
-[Create an account](manage-accounts.md#create-an-account) and then log into the web interface at the following address: [runpod.io/console/login](https://www.runpod.io/console/login).
+[Create an account](/get-started/connect-to-runpod) and then log into the web interface at the following address: [runpod.io/console/login](https://www.runpod.io/console/login).
 
 ## CLI
 

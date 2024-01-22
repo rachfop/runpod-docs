@@ -1,5 +1,5 @@
 ---
-title: "Quick Start"
+title: "Quick start"
 sidebar_position: 2
 ---
 
@@ -139,4 +139,9 @@ Depending on any modifications you made to your handler, you may need to modify 
 
 :::
 
-Now that you have successfully launched an endpoint using our template, you can start customizing the handler for your use case.
+## Next steps
+
+Now that you have successfully launched an endpoint using our template, you can:
+
+- [Customize the handler](/serverless/handlers/overview)
+- [Send requests to the Endpoint](/serverless/serverless-functions/serverless-usage)

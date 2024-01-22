@@ -1,14 +1,11 @@
 ---
-title: "Manage Serverless Endpoints"
+title: "Manage Endpoints"
 slug: "create-serverless-endpoint"
 excerpt: "Create a new Serverless endpoint, or modify/delete existing ones."
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Mon Jul 10 2023 16:44:22 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Aug 12 2023 01:06:20 GMT+0000 (Coordinated Universal Time)"
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Creating/Modifying Serverless Endpoints
 
@@ -16,13 +13,16 @@ updatedAt: "Sat Aug 12 2023 01:06:20 GMT+0000 (Coordinated Universal Time)"
 
 ## Create a New Serverless Endpoint
 
-<!-- dprint-ignore-start -->
+<Tabs>
+  <TabItem value="curl" label="cURL" default>
 ```curl
 curl --request POST \
   --header 'content-type: application/json' \
   --url 'https://api.runpod.io/graphql?api_key=${YOUR_API_KEY}' \
   --data '{"query": "mutation { saveEndpoint(input: { gpuIds: \"AMPERE_16\", idleTimeout: 5, locations: \"US\", name: \"Generated Endpoint -fb\", networkVolumeId: \"\", scalerType: \"QUEUE_DELAY\", scalerValue: 4, templateId: \"xkhgg72fuo\", workersMax: 3, workersMin: 0 }) { gpuIds id idleTimeout locations name scalerType scalerValue templateId workersMax workersMin } }"}'
 ```
+  </TabItem>
+  <TabItem value="graphql" label="GraphQL">
 ```graphql
 mutation {
   saveEndpoint(input: {
@@ -56,7 +56,9 @@ mutation {
   }
 }
 ```
-```json Output | JSON
+  </TabItem>
+  <TabItem value="output" label="Output">
+```json
 {
   "data": {
     "saveEndpoint": {
@@ -74,17 +76,21 @@ mutation {
   }
 }
 ```
-<!-- dprint-ignore-end -->
+  </TabItem>
+</Tabs>
 
 ## Modify an Existing Serverless Endpoint
 
-<!-- dprint-ignore-start -->
+<Tabs>
+  <TabItem value="curl" label="cURL" default>
 ```curl
 curl --request POST \
   --header 'content-type: application/json' \
   --url 'https://api.runpod.io/graphql?api_key=${YOUR_API_KEY}' \
   --data '{"query": "mutation { saveEndpoint(input: { id: \"i02xupws21hp6i\", gpuIds: \"AMPERE_16\", name: \"Generated Endpoint -fb\", templateId: \"xkhgg72fuo\", workersMax: 0 }) { id gpuIds name templateId workersMax } }"}'
 ```
+  </TabItem>
+  <TabItem value="graphql" label="GraphQL">
 ```graphql
 mutation {
   saveEndpoint(input: {
@@ -105,7 +111,9 @@ mutation {
   }
 }
 ```
-```json Output | JSON
+  </TabItem>
+  <TabItem value="output" label="Output">
+```json
 {
   "data": {
     "saveEndpoint": {
@@ -118,17 +126,21 @@ mutation {
   }
 }
 ```
-<!-- dprint-ignore-end -->
+  </TabItem>
+</Tabs>
 
 # View Your Endpoints
 
-<!-- dprint-ignore-start -->
+<Tabs>
+  <TabItem value="curl" label="cURL" default>
 ```curl
 curl --request POST \
      --header 'content-type: application/json' \
      --url 'https://api.runpod.io/graphql?api_key=${YOUR_API_KEY}' \
      --data '{"query": "query Endpoints { myself { endpoints { gpuIds id idleTimeout locations name networkVolumeId pods { desiredStatus } scalerType scalerValue templateId workersMax workersMin } serverlessDiscount { discountFactor type expirationDate } } }"}'
 ```
+  </TabItem>
+  <TabItem value="graphql" label="GraphQL">
 ```graphql
 query Endpoints {
   myself {
@@ -156,7 +168,9 @@ query Endpoints {
   }
 }
 ```
-```json Output | JSON
+  </TabItem>
+  <TabItem value="output" label="Output">
+```json
 {
   "data": {
     "myself": {
@@ -181,29 +195,36 @@ query Endpoints {
   }
 }
 ```
-<!-- dprint-ignore-end -->
+  </TabItem>
+</Tabs>
 
 # Deleting Serverless Endpoints
 
 Note that your endpoint's min and max workers must both be set to zero for your call to work.
 
-<!-- dprint-ignore-start -->
+<Tabs>
+  <TabItem value="curl" label="cURL">
 ```curl
 curl --request POST \
 	--header 'content-type: application/json' \
   --url 'https://api.runpod.io/graphql?api_key=${YOUR_API_KEY}' \
   --data '{"query": "mutation { deleteEndpoint(id: \"i02xupws21hp6i\") }"}'
 ```
+  </TabItem>
+  <TabItem value="graphql" label="GraphQL">
 ```graphql
 mutation {
   deleteEndpoint(id: "i02xupws21hp6i")
 }
 ```
-```json Output | JSON
+  </TabItem>
+  <TabItem value="output" label="Output">
+```json
 {
   "data": {
     "deleteEndpoint": null
   }
 }
 ```
-<!-- dprint-ignore-end -->
+  </TabItem>
+</Tabs>

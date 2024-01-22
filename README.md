@@ -56,7 +56,6 @@ To lint the entire repo, run:
 yarn lint
 ```
 
-
 ## Format Python code examples
 
 Install `blacken-docs`.

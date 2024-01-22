@@ -1,11 +1,16 @@
 ---
-title: "Endpoints"
-slug: "serverless-endpoint"
+title: "Overview"
 description: "The Endpoint is the entry point to your serverless worker."
 sidebar_position: 1
 ---
 
+The Endpoint is the entry point to your serverless worker
+
+The following are settings available to you when creating an Endpoint.
+
+<!--
 With a working handler now baked into a docker image with all the dependencies required to run, you are ready to deploy it on RunPod and start sending API requests.
+-->
 
 ## Endpoint settings
 
@@ -18,25 +23,9 @@ The resulting endpoint will be assigned a random ID to be used when making calls
 
 The name is only visible to you.
 
-### Select Template
-
-Select a Template that you would like to use for this particular endpoint.
-This Template will be used to configure the underlying worker.
-
 ### GPU Selection
 
 Select one or more GPUs you want your Endpoint to run on.
-
-<!--
-
-Looks like priority was removed from the UI
-#### Priority
-
-When multiple GPU sizes are selected, they will be prioritized based on the chosen order.
-When an endpoint is created, RunPod will allocate as many works to the first available GPU size selected based on priority.
-Roughly every 60 minutes, the number of allocated workers is reviewed, and a rebalance will occur to either move more to your first priority or spill over to different sizes until your active and max workers are met.
-
--->
 
 ### Active (Min) Workers
 
@@ -55,6 +44,25 @@ This will establish a ceiling or upper limit to the number of active workers you
 
 Default: 3
 
+<details>
+<summary>
+
+How to configure Max Workers
+
+</summary>
+You can also configure a max worker count. This is the top limit of what RunPod will attempt to auto-scale for you. Use this to cap your concurrent request count and also limit your cost ceiling.
+
+:::note
+We currently base your caching coefficient by this number, so an endpoint with higher max worker count will also receive a higher priority when caching workers.
+
+This is partially why we limit new accounts to a relatively low max concurrency at the account level. If you want to get this number raised, you generally will need to have a higher history of spending, or commit to a relatively high spend per month.
+
+You should generally aim to set your max worker count to be 20% higher than you expect your max concurrency to be.
+
+:::
+
+</details>
+
 ### GPUs / Worker
 
 The number of GPUs you would like assigned to your worker.
@@ -72,7 +80,7 @@ During the idle period, your worker is considered running and will incur a charg
 
 Default: 5 seconds
 
-### ⚡ FlashBoot
+### FlashBoot
 
 RunPod magic to further reduce the average cold-start time of your endpoint.
 FlashBoot works best when an endpoint receives consistent utilization.
@@ -91,7 +99,15 @@ By default all datacenters are selected.
 
 Attach a network storage volume to your deployed workers.
 
-📘 Network volumes will be mounted to `/runpod-volume/`
+Network volumes will be mounted to `/runpod-volume/`.
+
+:::note
+
+While this is a high performance network drive, do keep in mind that it will have higher latency than a local drive.
+
+This will limit the availability of cards, as your endpoint workers will be locked to the datacenter that houses your network volume.
+
+:::
 
 #### Scale Type
 
@@ -106,3 +122,13 @@ _Total Workers Formula: Math.ceil((requestsInQueue + requestsInProgress) / <set 
 
 Within the select GPU size category you can further select which GPU models you would like your endpoint workers to run on.
 Default: `4090` | `A4000` | `A4500`
+
+<details>
+<summary>
+What's the difference between GPU models.
+</summary>
+A100s are about 2-3x faster than A5000s and also allow double the VRAM with very high bandwidth throughout. 3090s and A5000s are 1.5-2x faster than A4000s. Sometimes, it may make more sense to use 24 GB even if you don't need it compared to 16 GB due to faster response times. Depending on the nature of the task, it's also possible that execution speeds may be bottlenecked and not significantly improved simply by using a higher-end card. Do your own calculations and experimentation to determine out what's most cost-effective for your workload and task type.
+
+Want access to different flavors? [Let us know](https://www.runpod.io/contact) and we can look at expanding our offerings!
+
+</details>

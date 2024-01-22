@@ -13,4 +13,4 @@ To create a custom API, you can navigate to the RunPod Serverless console and cl
 
 Please note that running 1 minimum worker is great for debugging purposes, but you will be charged for that worker whether or not you are making requests to your endpoint.
 
-Once everything is set up, you can invoke your API using the "run" endpoint on your API dashboard. RunPod services are currently asynchronous, so you must use the "status" endpoint to get the status/results of each run using the ID present in the run response payload. You can also pass in a webhook URL when invoking "run" within the JSON body.
+Once everything is set up, you can invoke your API using the "run" endpoint on your API dashboard. RunPod services are currently asynchronous, so you must use the "status" endpoint to get the status/results of each run using the ID present in the run response payload.

@@ -1,7 +1,8 @@
 ---
-title: "Using Your Endpoint"
+title: "Make a request"
 id: "serverless-usage"
 description: "The method in which jobs are submitted and returned."
+sidebar_position: 4
 ---
 
 With a successful custom endpoint deployed, you are nearly ready to make a job request. Let's start by constructing our request body that will be submitted.

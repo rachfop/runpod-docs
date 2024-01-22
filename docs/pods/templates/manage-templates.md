@@ -3,6 +3,7 @@ title: Manage Pod Templates
 description: Manage Pod Templates.
 sidebar_position: 3
 ---
+
 ## Explore Templates
 
 You can explore Templates managed by RunPod and Community Templates in the **[Explore](https://www.runpod.io/console/explore)** section of the Web interface.
@@ -32,10 +33,9 @@ curl --request POST \
 
 ### Environment variables
 
-Environment variables in RunPod templates are key-value pairs that are accessible within your pod. You can define a variable by setting a name with the `key` and then what it should contain with the `value`. 
+Environment variables in RunPod templates are key-value pairs that are accessible within your pod. You can define a variable by setting a name with the `key` and then what it should contain with the `value`.
 
 These variables can be used to pass configuration and secrets to your container. For example, you might use environment variables to store the path to a database or API keys that your application needs to function.
-
 
 ![](https://files.readme.io/b7670dd-image.png)
 

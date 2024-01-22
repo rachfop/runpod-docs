@@ -1,5 +1,5 @@
 ---
-title: "Manage Pod templates"
+title: "Manage Templates"
 sidebar_position: 3
 ---
 

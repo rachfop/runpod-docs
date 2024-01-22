@@ -3,8 +3,7 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
-import { injectSpeedInsights } from '@vercel/speed-insights';
-
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 import path from "path";
 import { themes as prismThemes } from "prism-react-renderer";
@@ -40,7 +39,7 @@ const config = {
           sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          routeBasePath: '',
+          routeBasePath: "",
           editUrl: "https://github.com/runpod/docs",
         },
         /*
@@ -83,105 +82,105 @@ const config = {
       appId: "LZTDWL431O",
       apiKey: "42b27b88e9b1049fbf9a678640aca766",
       indexName: "runpod-vercel",
-      //insights: true,
+      // insights: true,
     },
-        image: "img/docusaurus-social-card.jpg",
-        navbar: {
-          title: "RunPod",
+    image: "img/docusaurus-social-card.jpg",
+    navbar: {
+      title: "RunPod",
 
-          logo: {
-            alt: "RunPod Logo",
-            src: "img/logo.svg",
-          },
+      logo: {
+        alt: "RunPod Logo",
+        src: "img/logo.svg",
+      },
+      items: [
+        {
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "docsSidebar",
+          collapsed: false,
+          label: "Documentation",
+        },
+        {
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "tutorialsSidebar",
+          collapsed: false,
+          label: "Tutorials",
+        },
+        {
+          position: "left",
+          href: "https://docs.runpod.io/reference/runpod-apis",
+          collapsed: false,
+          label: "AI APIs",
+        },
+
+        { href: "https://blog.runpod.io", label: "Blog", position: "left" },
+        {
+          href: "https://github.com/runpod",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Docs",
           items: [
             {
-              type: "docSidebar",
-              position: "left",
-              sidebarId: "docsSidebar",
-              collapsed: false,
-              label: "Documentation",
-            },
-            {
-              position: "left",
-              href: "https://docs.runpod.io/reference/runpod-apis",
-              collapsed: false,
-              label: "API Endpoints",
-            },
-            {
-              type: "docSidebar",
-              position: "left",
-              sidebarId: "tutorialsSidebar",
-              collapsed: false,
-              label: "Tutorials",
-            },
-
-            { href: "https://blog.runpod.io", label: "Blog", position: "left" },
-            {
-              href: "https://github.com/runpod",
-              label: "GitHub",
-              position: "right",
+              label: "Overview",
+              to: "/overview",
             },
           ],
         },
-        footer: {
-          style: "dark",
-          links: [
-            {
-              title: "Docs",
-              items: [
-                {
-                  label: "Overview",
-                  to: "/overview",
-                },
-              ],
-            },
-            {
-              title: "Community",
-              items: [
-                /*
+        {
+          title: "Community",
+          items: [
+            /*
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               */
-                {
-                  label: "Discord",
-                  href: "https://discord.gg/runpod",
-                },
-                /*
+            {
+              label: "Discord",
+              href: "https://discord.gg/runpod",
+            },
+            /*
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/docusaurus',
               },
               */
-              ],
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Blog",
+              href: "https://blog.runpod.io",
             },
             {
-              title: "More",
-              items: [
-                {
-                  label: "Blog",
-                  href: "https://blog.runpod.io",
-                },
-                {
-                  label: "GitHub",
-                  href: "https://github.com/runpod",
-                },
-              ],
+              label: "GitHub",
+              href: "https://github.com/runpod",
             },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} RunPod`,
         },
-        prism: {
-          theme: prismThemes.github,
-          darkTheme: prismThemes.dracula,
-        },
-        docs: {
-          sidebar: {
-            hideable: true,
-          },
-        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} RunPod`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
       },
+    },
+  },
 
   scripts: [
     {
@@ -198,7 +197,7 @@ const config = {
       defer: true,
     },
     {
-      src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3"
+      src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3",
     },
   ],
   plugins: [],

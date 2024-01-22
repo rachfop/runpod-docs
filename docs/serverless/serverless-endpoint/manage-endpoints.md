@@ -2,12 +2,10 @@
 title: "Manage Endpoints"
 id: "serverless-endpoint-creation"
 description: "You can create, delete, and edit Endpoints."
-sidebar_position: 2
+sidebar_position: 10
 ---
 
-To convert a serverless template into an endpoint, navigate to [Serverless Endpoints](https://www.runpod.io/console/serverless/user/endpoints) and press `New Endpoint` to open up the endpoint creation dialog. After you are done configuring your endpoint, press `deploy`.
-
-![](../../../static/img/new-endpoint.png)
+Learn to manage Severless Endpoints.
 
 ## Create an Endpoint
 
@@ -18,9 +16,8 @@ You can create an Endpoint in the Web interface.
    1. Endpoint Name.
    2. Select your GPUs.
    3. Configure your workers.
-   4. Select a Template.
-   5. Add a container image.
-   6. Select **Deploy**.
+   4. Add a container image.
+   5. Select **Deploy**.
 
 ## Delete an Endpoint
 

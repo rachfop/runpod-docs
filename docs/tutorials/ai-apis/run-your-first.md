@@ -1,7 +1,7 @@
 ---
-title: "Job endpoints"
-description: "Interact with your favorite models by sending a request to the endpoints below."
-sidebar_position: 3
+title: "Run your first AI API with Stable Diffusion"
+description: "Interact with your favorite models without managing the pods yourself."
+sidebar_position: 1
 ---
 
 Job endpoints in RunPod are URLs that provide standard functionality for submitting jobs and retrieving the output from job requests.
@@ -19,9 +19,9 @@ For example, if you are using the Stable Diffusion v1 inference endpoint, you wo
 
 ```bash
 curl -X POST https://api.runpod.ai/v2/stable-diffusion-v1/runsync \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' \
--d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer {Your_API_KEY}' \
+    -d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
 ```
 
 You would get an immediate response that includes a unique job ID.
@@ -36,9 +36,9 @@ For example, if you are using the Stable Diffusion v1 inference endpoint, you wo
 
 ```bash
 curl -X POST https://api.runpod.ai/v2/stable-diffusion-v1/run \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' \
--d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer {Your_API_KEY}' \
+    -d '{"input": {"prompt": "a cute magical flying dog, fantasy art drawn by disney concept artists"}}'
 ```
 
 ## Status
@@ -49,13 +49,14 @@ For checking the status of your job, you would make a request like the following
 
 ```bash
 curl https://api.runpod.ai/v2/stable-diffusion-v1/status/c80ffee4-f315-4e25-a146-0f3d98cf024b \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer {Your_API_KEY}'
 ```
 
 ## Cancel
 
-Cancel is an endpoint that cancels your job. It is useful for cancelling your job.
+Cancel is an endpoint that cancels your job.
+It is useful for cancelling your job.
 
 ## Health
 
@@ -66,7 +67,7 @@ The health check is a utility function that can be called on any endpoint to pro
 curl --request GET \
      --url https://api.runpod.ai/v2/stable-diffusion-v1/health \
      --header 'accept: application/json' \
-     --header 'authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+     --header 'authorization: Bearer {Your_API_KEY}'
 ```
 
 :::note

@@ -12,8 +12,8 @@ For more information on billing questions see [Billing FAQ](docs/references/faq/
 
 RunPod accepts several payment methods for funding your account:
 
-1. **Credit Card**: You can use your credit card to fund your RunPod account. However, be aware that card declines are more common than you might think, and the reasons for them might not always be clear. If you're using a prepaid card, it's recommended to deposit in transactions of at least $100 to avoid unexpected blocks due to Stripe's minimums for prepaid cards. 
-For more information, review [cards accepted by Stripe](https://stripe.com/docs/payments/cards/supported-card-brands?ref=blog.runpod.io).
+1. **Credit Card**: You can use your credit card to fund your RunPod account. However, be aware that card declines are more common than you might think, and the reasons for them might not always be clear. If you're using a prepaid card, it's recommended to deposit in transactions of at least $100 to avoid unexpected blocks due to Stripe's minimums for prepaid cards.
+   For more information, review [cards accepted by Stripe](https://stripe.com/docs/payments/cards/supported-card-brands?ref=blog.runpod.io).
 
 <!-- [source](https://blog.runpod.io/how-to-manage-funding-your-runpod-account#my-card-keeps-getting-declined) -->
 

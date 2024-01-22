@@ -5,6 +5,7 @@ sidebar_position: 4
 ---
 
 API keys authenticate requests to RunPod.
+You can generate an API key with **Read and Write** permission or **Read** permission.
 
 ## Generate
 

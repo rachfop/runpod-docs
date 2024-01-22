@@ -4,7 +4,6 @@ description: Learn about Templates.
 sidebar_position: 2
 ---
 
-
 Templates are Docker containers images paired with a configuration.
 
 They are used to launch images as Pods, define the required container disk size, volume, volume paths, and ports needed.
@@ -21,7 +20,6 @@ There a few types of Templates:
   - **Private Templates**: Custom Templates created by you or if using a team account, shared inside your team.
 
 ### Custom Templates
-
 
 You can customize templates depending on your skill level.
 The easiest way is to start with a RunPod official template or community template and use it as-is.

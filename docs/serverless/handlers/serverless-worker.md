@@ -38,7 +38,7 @@ CMD [ "python", "-u", "/handler.py" ]
 
 > 🚧 If your handler requires external files such as model weights, be sure to cache them into your docker image. You are striving for a completly self contained worker that does not need to download or fetch external files to run.
 
-## Other Considerations
+## Other considerations
 
 While we do not impose a limit on the docker image size your container registry might have, be sure to review any limitations they may have. Ideally, you want to keep your final docker image as small as possible and only container the absolute minimum to run your handler.
 

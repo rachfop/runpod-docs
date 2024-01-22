@@ -1,13 +1,7 @@
 ---
-title: "Testing Your API's Response Time"
-slug: "testing-your-apis-response-time"
-excerpt: ""
-hidden: false
-metadata: 
-  image: []
-  robots: "index"
-createdAt: "Thu Apr 13 2023 08:18:19 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 29 2023 14:27:50 GMT+0000 (Coordinated Universal Time)"
+title: Testing your API response time
+sidebar_label: Test response time
+description: Learn to test to test your API response time.
 ---
 
 When setting up an API, you have several options available at different price points and resource allocations. You can select a single option if you would prefer to only use one price point, or select a preference order between the pools that will allocate your requests accordingly.
