@@ -1,6 +1,5 @@
 ---
-title: "Make a request"
-id: "serverless-usage"
+title: "Send a request"
 description: "The method in which jobs are submitted and returned."
 sidebar_position: 4
 ---

@@ -1,5 +1,5 @@
 ---
-title: Testing your API response time
+title: Test response time
 sidebar_label: Test response time
 description: Learn to test to test your API response time.
 ---

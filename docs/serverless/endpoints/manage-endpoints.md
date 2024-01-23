@@ -1,6 +1,5 @@
 ---
 title: "Manage Endpoints"
-id: "serverless-endpoint-creation"
 description: "You can create, delete, and edit Endpoints."
 sidebar_position: 10
 ---

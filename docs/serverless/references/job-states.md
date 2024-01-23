@@ -1,11 +1,11 @@
 ---
-title: "Serverless Job states"
-slug: "serverless-job-states"
+title: "Job states"
+id: "job-states"
 description: "Learn about the different states a serverless job can be in during its lifecycle."
 sidebar_position: 5
 ---
 
-When working with serverless functions in RunPod, it's essential to understand the various states a job can go through from initiation to completion.
+When working with Handler Functions in RunPod, it's essential to understand the various states a job can go through from initiation to completion.
 Each state provides insight into the job's current status and helps in managing the job flow effectively.
 
 ## Job state

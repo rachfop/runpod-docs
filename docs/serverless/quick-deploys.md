@@ -29,4 +29,4 @@ Here, you can fork the programming and compute model templates.
 Begin with the [worker-template](https://github.com/runpod-workers/worker-template) and modify it as needed.
 These RunPod workers incorporate CI/CD features to streamline your project setup.
 
-For detailed guidance on customizing your interaction Endpoints, refer to [Serverless Functions](/serverless/serverless-functions).
+For detailed guidance on customizing your interaction Endpoints, refer to [Handler Functions](/serverless/serverless-functions).

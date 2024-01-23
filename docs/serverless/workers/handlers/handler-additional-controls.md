@@ -1,5 +1,5 @@
 ---
-title: "Additional Controls"
+title: "Additional Handlers"
 sidebar_position: 5
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: "Quick start"
+title: "Get started"
 sidebar_position: 2
 ---
 
 ## Overview
 
-By the end of this quick start, you'll have an understanding of building a Docker image, deploying a Serverless endpoint, and sending a request.
+You'll have an understanding of building a Docker image, deploying a Serverless endpoint, and sending a request.
 You'll also have a basic understanding of how to customize the handler for your use case.
 
 ## Prerequisites

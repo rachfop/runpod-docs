@@ -1,10 +1,10 @@
 ---
-title: Using Environment Variables
+title: Use environment variables
 ---
 
-Incorporating environment variables into your serverless functions is a key aspect of managing external resources like S3 buckets.
+Incorporating environment variables into your Handler Functions is a key aspect of managing external resources like S3 buckets.
 
-This section focuses on how to use environment variables to facilitate the uploading of images sto an S3 bucket using RunPod Serverless Functions.
+This section focuses on how to use environment variables to facilitate the uploading of images sto an S3 bucket using RunPod Handler Functions.
 
 This will go through the process of writing Python code for the uploading and setting the necessary environment variables in the Web interface.
 
@@ -25,9 +25,11 @@ Let's break down the steps to upload an image to an S3 bucket using Python:
    from runpod.serverless.utils import rp_upload
    import runpod
 
+
    def handler(job):
        image_url = rp_upload.upload_image(job["id"], "./image.png")
        return [image_url]
+
 
    runpod.serverless.start({"handler": handler})
    ```
@@ -71,7 +73,8 @@ Finally, let's test the serverless function to confirm that it successfully uplo
 
    ```python
    response = requests.get(
-       "https://api.runpod.ai/v2/xxxxxxxxx/status/" + response.json()["id"], headers=headers
+       "https://api.runpod.ai/v2/xxxxxxxxx/status/" + response.json()["id"],
+       headers=headers,
    )
    response.json()
    ```
@@ -90,4 +93,4 @@ Finally, let's test the serverless function to confirm that it successfully uplo
    }
    ```
 
-By following these steps, you can effectively use environment variables to manage S3 bucket credentials and operations within your RunPod serverless functions. This approach ensures secure, scalable, and efficient handling of external resources in your serverless applications.
+By following these steps, you can effectively use environment variables to manage S3 bucket credentials and operations within your RunPod Handler Functions. This approach ensures secure, scalable, and efficient handling of external resources in your serverless applications.

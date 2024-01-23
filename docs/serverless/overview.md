@@ -10,7 +10,7 @@ This flexible platform is designed to scale dynamically, meeting the computation
 You can use the following methods:
 
 - Quick Deploy: Quick deploys are pre-built custom endpoints of the most popular AI models.
-- Serverless Functions: Bring your own functions and run in the cloud.
+- Handler Functions: Bring your own functions and run in the cloud.
 
 If you'd like to use pre-built endpoints of some of the most popular AI models, see [AI APIs](ai-apis).
 

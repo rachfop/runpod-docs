@@ -1,16 +1,8 @@
 ---
-title: "Overview"
-description: "The Endpoint is the entry point to your serverless worker."
+title: "Worker configurations"
 sidebar_position: 1
 ---
 
-The Endpoint is the entry point to your serverless worker
-
-The following are settings available to you when creating an Endpoint.
-
-<!--
-With a working handler now baked into a docker image with all the dependencies required to run, you are ready to deploy it on RunPod and start sending API requests.
--->
 
 ## Endpoint settings
 

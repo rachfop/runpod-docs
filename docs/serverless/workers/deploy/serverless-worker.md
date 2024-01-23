@@ -1,10 +1,10 @@
 ---
-title: " The Worker"
-id: "serverless-worker"
+title: "Package image"
 description: "Packaged code that will be receive and execute API submitted requests."
+sidebar_position: 2
 ---
 
-Once you have a functional handler, the next step will be to package it into a Docker image that can be deployed as a scalable serverless worker. This is accomplished by defining a docker file to import everything required to run your handler. Example docker files are in the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
+Once you have a Handler Function, the next step will be to package it into a Docker image that can be deployed as a scalable serverless worker. This is accomplished by defining a docker file to import everything required to run your handler. Example docker files are in the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
 
 _Unfamiliar with Docker? Check out their [overview page](https://docs.docker.com/get-started/overview/)._
 

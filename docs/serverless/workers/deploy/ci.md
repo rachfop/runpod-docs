@@ -1,12 +1,12 @@
 ---
-title: CI/CD
-description: Learn to test your Serverless Functions with your CI/CD pipeline.
-sidebar_position: 5
+title: Continuous integration
+description: Learn to test your Handler Functions through continuous integration.
+sidebar_position: 3
 ---
 
-Integrate your Serverless Functions with your CI/CD pipeline.
+Integrate your Handler Functions through continuous integration.
 
-The [Test Runner](https://github.com/runpod/test-runner) GitHub Action is used on your CI/CD pipeline to test and integrate your Serverless Functions into your applications.
+The [Test Runner](https://github.com/runpod/test-runner) GitHub Action is used to test and integrate your Handler Functions into your applications.
 
 :::note
 
