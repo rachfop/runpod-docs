@@ -12,12 +12,14 @@ RunPod's key offerings include Pods, Serverless compute, and AI APIs.
 ## What are Pods?
 
 **Pods** allows you to spin up GPU and CPU instances with containers.
+The Pods are a solution for users that need a server with a GPU to run a docker container on it.
 Pods are available in two different types: Secure Cloud and Community Cloud.
 The Secure Cloud runs in T3/T4 data centers providing high reliability and security, while the Community Cloud connects individual compute providers to consumers through a vetted, secure peer-to-peer system.
 
 ## What is Serverless?
 
 **Serverless** offers pay-per-second serverless GPU computing, bringing autoscaling to your production environment.
+The Serverless offering allows users to define a worker, create a REST API endpoint for it which will queue jobs and autoscale to fill demand.
 This service, part of our Secure Cloud offering, guarantees low cold-start times and stringent security measures.
 
 You can get stared with [Quick deploys](/serverless/quick-deploys) or for further customization, [build your own](/serverless/workers/overview).
@@ -27,6 +29,9 @@ You can get stared with [Quick deploys](/serverless/quick-deploys) or for furthe
 **AI APIs** are fully managed and Endpoints of some of the most popular AI models.
 They are designed for a variety of applications including Dreambooth, Stable Diffusion, Whisper, and more.
 
+## CLI
+
+Additionally, RunPod has developed a Command Line Interface (CLI) tool designed specifically for quickly developing and deploying custom endpoints on the RunPod serverless platform.
 
 ### Our Mission
 
