@@ -14,6 +14,7 @@ In certain scenarios, you might want to explicitly fail a job and provide a cust
 ```python
 import runpod
 
+
 def handler(job):
     job_input = job["input"]
 
@@ -25,6 +26,7 @@ def handler(job):
 
     # Proceed if the input is valid
     return "Input validation successful."
+
 
 # Start the RunPod serverless function
 runpod.serverless.start({"handler": handler})
