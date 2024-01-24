@@ -42,6 +42,8 @@ title: GPU types
 ---
 
 The following list contains all GPU types available on RunPod.
+
+For more information, see [GPU pricing](https://www.runpod.io/gpu-instance/pricing).
 <!--
 Table last generated: {date}
 -->
