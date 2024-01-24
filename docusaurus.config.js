@@ -80,7 +80,7 @@ const config = {
   themeConfig: {
     algolia: {
       appId: "LZTDWL431O",
-      apiKey: "579a75d22533b970ddf821f8fd0389d9",
+      apiKey: "1e83cdfb201f930cb2a80e8b0fd0401a",
       indexName: "runpod-vercel",
       // insights: true,
     },
@@ -154,6 +154,10 @@ const config = {
             {
               label: "Discord",
               href: "https://discord.gg/runpod",
+            },
+            {
+              label: "Contact us",
+              href: "https://www.runpod.io/contact",
             },
             /*
               {

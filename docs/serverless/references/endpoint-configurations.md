@@ -3,7 +3,6 @@ title: "Worker configurations"
 sidebar_position: 1
 ---
 
-
 ## Endpoint settings
 
 The following are configurable settings within an Endpoint.

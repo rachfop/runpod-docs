@@ -9,7 +9,9 @@ const FeatureList = [
     url: "/pods/overview", // Add URL here
     description: (
       <>
-        <a href="/pods/overview"><b>Pods</b></a>{" "}
+        <a href="/pods/overview">
+          <b>Pods</b>
+        </a>{" "}
         offer fast deployment of container-based GPU instances, with Secure Cloud for high reliability and security, and
         Community Cloud for a secure peer-to-peer network.
       </>
@@ -21,7 +23,9 @@ const FeatureList = [
     url: "/serverless/overview", // Add URL here
     description: (
       <>
-        <a href="/serverless/overview"><b>Serverless</b></a>{" "}
+        <a href="/serverless/overview">
+          <b>Serverless</b>
+        </a>{" "}
         service provides pay-per-second serverless computing with autoscaling, quick start times, and robust security in
         its Secure Cloud.
       </>
@@ -33,7 +37,9 @@ const FeatureList = [
     url: "/ai-apis",
     description: (
       <>
-        <a href="ai-apis"><b>AI APIs</b></a>{" "}
+        <a href="ai-apis">
+          <b>AI APIs</b>
+        </a>{" "}
         are scalable and managed services tailored for various applications like Dreambooth and Stable Diffusion,
         ensuring efficient handling of diverse workloads.
       </>
@@ -56,7 +62,6 @@ function Feature({ Svg, title, description, url }) {
     </div>
   );
 }
-
 
 export default function HomepageFeatures() {
   return (

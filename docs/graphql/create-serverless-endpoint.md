@@ -7,7 +7,6 @@ excerpt: "Create a new Serverless endpoint, or modify/delete existing ones."
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 `gpuIds`, `name`, and `templateId` are required arguments; all other arguments are optional, and default values will be used if unspecified.
 
 ## Create a new Serverless Endpoint

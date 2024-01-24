@@ -37,3 +37,5 @@ runpod.serverless.start({"handler": handler})
 Be cautious with `try/except` blocks in your handler function. Avoid suppressing errors unintentionally. You should either return the error for a graceful failure or raise it to flag the job as `FAILED`.
 
 :::
+
+One design pattern to consider, is to [Refresh your Worker](/serverless/workers/handlers/handler-additional-controls#refresh-worker) when an error occurs.
