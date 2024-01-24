@@ -35,7 +35,7 @@ Let's break down the steps to upload an image to an S3 bucket using Python:
    ```
 
 2. **Packaging Your Code**:
-   Follow the guidelines in [Worker Image Creation](/serverless/handlers/serverless-worker.md) for packaging and deployment.
+   Follow the guidelines in [Worker Image Creation](/serverless/handlers/serverless-worker) for packaging and deployment.
 
 ### Setting Environment Variables for S3
 

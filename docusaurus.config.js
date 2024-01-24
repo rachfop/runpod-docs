@@ -15,7 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://runpod-docs.vercel.app",
+  url: "https://docs.runpod.io",
   baseUrl: "/",
 
   organizationName: "runpod", // Usually your GitHub org/user name.
@@ -80,7 +80,7 @@ const config = {
   themeConfig: {
     algolia: {
       appId: "LZTDWL431O",
-      apiKey: "42b27b88e9b1049fbf9a678640aca766",
+      apiKey: "579a75d22533b970ddf821f8fd0389d9",
       indexName: "runpod-vercel",
       // insights: true,
     },
@@ -131,6 +131,14 @@ const config = {
             {
               label: "Overview",
               to: "/overview",
+            },
+            {
+              label: "Tutorials",
+              to: "/tutorials/introduction/overview",
+            },
+            {
+              label: "AI APIs",
+              to: "https://docs.runpod.io/reference/runpod-apis",
             },
           ],
         },
