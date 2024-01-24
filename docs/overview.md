@@ -33,7 +33,7 @@ They are designed for a variety of applications including Dreambooth, Stable Dif
 
 Additionally, RunPod has developed a Command Line Interface (CLI) tool designed specifically for quickly developing and deploying custom endpoints on the RunPod serverless platform.
 
-### Our Mission
+### Our mission
 
 RunPod is committed to making cloud computing accessible and affordable to all without compromising on features, usability, or experience. We strive to empower individuals and enterprises with cutting-edge technology, enabling them to unlock the potential of AI and cloud computing.
 
@@ -46,6 +46,6 @@ More information can be found on our [contact page](https://www.runpod.io/contac
 
 Learn more about RunPod by:
 
-- Create an account
-- Add funds to your account
-- Run your first tutorial
+- [Create an account](/get-started/manage-accounts)
+- [Add funds to your account](/get-started/billing-information)
+- [Run your first tutorial](/tutorials/introduction/overview)

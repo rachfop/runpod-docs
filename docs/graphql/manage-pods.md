@@ -8,11 +8,12 @@ import TabItem from '@theme/TabItem';
 
 ## Authentication
 
-RunPod uses API Keys for all API requests. Go to [Settings](https://www.runpod.io/console/user/settings) to manage your API keys.
+RunPod uses API Keys for all API requests.
+Go to [Settings](https://www.runpod.io/console/user/settings) to manage your API keys.
 
 ## GraphQL API Spec
 
-If you need detailed queries, mutations, fields, and inputs, look at our [GraphQL Spec](https://graphql-spec.runpod.io/).
+If you need detailed queries, mutations, fields, and inputs, look at the [GraphQL Spec](https://graphql-spec.runpod.io/).
 
 ## Create Pods
 
@@ -473,7 +474,8 @@ query Pod {
 
 ## List GPU types
 
-When creating a Pod, you will need to pass GPU type IDs. These queries can help find all GPU types, their IDs, and other attributes like VRAM.
+When creating a Pod, you will need to pass GPU type IDs.
+These queries can help find all GPU types, their IDs, and other attributes like VRAM.
 
 <Tabs>
   <TabItem value="curl" label="cURL" default>

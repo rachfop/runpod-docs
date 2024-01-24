@@ -6,9 +6,10 @@ sidebar_position: 1
 
 :::note
 
-You will need a RunPod API key which can be generated under your user settings. This API key will identify you for billing purposes, so guard it well!
+You will need a RunPod API key which can be generated under your user settings.
+This API key will identify you for billing purposes, so guard it well!
 You must retrieve your results via the status endpoint within 30 minutes.
-We do not keep your inputs or outputs longer than that to protect your privacy!
+We don't keep your inputs or outputs longer than that to protect your privacy!
 
 :::
 

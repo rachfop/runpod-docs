@@ -14,16 +14,19 @@ Here are some things to keep in mind.
 - Excessive maintenance will result in further penalties.
 - You are allowed to bring down machines that have active users on them provided that you are in a maintenance window.
 
-## Reliability Calculations
+## Reliability calculations
 
-RunPod aims to partner with datacenters that offer **99.99%** uptime. Reliability is currently calculated as follows:
-
-( total minutes + small buffer ) / total minutes in interval
+RunPod aims to partner with datacenters that offer **99.99%** uptime.
+Reliability is currently calculated as follows:
+<!-- the $ is for math equations -->
+$( total minutes + small buffer ) / total minutes in interval$
 
 This means that if you have 30 minutes of network downtime on the first of the month, your reliability will be calculated as:
+<!-- the $ is for math equations -->
+$( 43200 - 30 + 10 ) / 43200 = 99.95%$
 
-( 43200 - 30 + 10 ) / 43200 = 99.95%
-
-Based on approximately 43200 minutes per month and a 10 minute buffer. We include the buffer because we do incur small single-minute uptime dings once in a while due to agent upgrades and such. It will take an entire month to regenerate back to 100% uptime given no further downtimes in the month, considering it it calculated based on a 30 days rolling window.
+Based on approximately 43200 minutes per month and a 10 minute buffer.
+We include the buffer because we do incur small single-minute uptime dings once in a while due to agent upgrades and such.
+It will take an entire month to regenerate back to 100% uptime given no further downtimes in the month, considering it it calculated based on a 30 days rolling window.
 
 Machines with less than **98%** reliability are **automatically removed** from the available GPU pool and can only be accessed by clients that already had their data on it.

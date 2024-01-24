@@ -15,7 +15,7 @@ The first step to troubleshooting a 502 error is to check whether your pod has a
 
 If a GPU is attached, you will see it under the Pods screen (e.g. 1 x A6000). If a GPU is not attached, this number will be 0. RunPod does allow you to spin up a pod with 0 GPUs so that you can connect to it via a Terminal or CloudSync to access data. However, the options to connect to RunPod via the web interface will be nonfunctional, even if they are lit up.
 
-![](https://files.readme.io/fb4c0dd-image.png)
+![](/img/docs/fb4c0dd-image.png)
 
 ### Check Your Pod's Logs
 
@@ -23,7 +23,7 @@ After confirming that your pod has a GPU attached, the next step is to check you
 
 1. **Access your pod's logs**: You can view the logs from the pod's settings in the user interface.
 
-2. ![](https://files.readme.io/3500eba-image.png)\
+2. ![](/img/docs/3500eba-image.png)\
    **Look for errors**: Browse through the logs to find any error messages that may provide clues about why you're experiencing a 502 error.
 
 ### Verify Additional Steps for Official Templates

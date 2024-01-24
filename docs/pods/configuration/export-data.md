@@ -43,7 +43,7 @@ You can review a video guide on the process [here](https://www.youtube.com/watch
    - Create an Access Key on the Security Credentials page.
    - Note that your Secret Access Key will be displayed during this process. Keep it secure.
 
-![](https://files.readme.io/7fa9781-image.png)
+![](/img/docs/7fa9781-image.png)
 
 ### Sending Data from RunPod to AWS S3
 
@@ -63,7 +63,7 @@ You can review a video guide on the process [here](https://www.youtube.com/watch
    - Once you select Copy, your pod contents should begin copying over to Amazon S3.
    - You can monitor the transfer process through RunPod’s interface to ensure that the data transfer completes successfully.
 
-![](https://files.readme.io/8fec5c5-image.png)
+![](/img/docs/8fec5c5-image.png)
 
 Remember to keep your Access Key and Secret Access Key confidential to maintain the security of your AWS resources.
 
@@ -83,7 +83,7 @@ Remember to keep your Access Key and Secret Access Key confidential to maintain 
 4. **Organize Your Bucket:**
    - Once the bucket is created, consider creating a folder within the bucket for better organization, especially if managing multiple pods.
 
-![](https://files.readme.io/4450288-image.png)
+![](/img/docs/4450288-image.png)
 
 ### Transferring Data from RunPod to Google Cloud Storage
 
@@ -102,7 +102,7 @@ Remember to keep your Access Key and Secret Access Key confidential to maintain 
    - Start the data transfer process by selecting the relevant options.
    - Monitor the transfer in the RunPod interface to ensure successful completion.
 
-![](https://files.readme.io/a4fcf38-image.png)
+![](/img/docs/a4fcf38-image.png)
 
 ### Troubleshooting
 
@@ -129,7 +129,7 @@ Remember to keep your Service Account JSON key confidential to maintain the secu
    - In the Storage Browser, select Blob Containers, then click Add Container.
    - Optionally, create folders within this container for better organization.
 
-![](https://files.readme.io/dcc8c23-image.png)
+![](/img/docs/dcc8c23-image.png)
 
 ### Transferring Data from RunPod to Azure Blob Storage
 
@@ -145,7 +145,7 @@ Remember to keep your Service Account JSON key confidential to maintain the secu
    - Click on "Copy to Azure Blob Storage" to start the process.
    - Your RunPod data will begin copying over to the specified location in Azure Blob Storage.
 
-![](https://files.readme.io/55e94f0-image.png)
+![](/img/docs/55e94f0-image.png)
 
 Ensure secure handling of your Azure account key to maintain the integrity and security of your data during the transfer process.
 
@@ -160,7 +160,7 @@ Ensure secure handling of your Azure account key to maintain the integrity and s
 2. **Generate Application Key:**
    - Visit [App Keys](https://secure.backblaze.com/app_keys.htm) to create a new application key. This key will be used for authenticating access to your bucket.
 
-![](https://files.readme.io/8aff108-image.png)
+![](/img/docs/8aff108-image.png)
 
 ### Transferring Data from RunPod to Backblaze B2
 
@@ -175,7 +175,7 @@ Ensure secure handling of your Azure account key to maintain the integrity and s
 3. **Initiate Transfer:**
    - Click "Copy to Backblaze B2" to start the transfer process. Your pod's contents will begin transferring to the specified Backblaze B2 bucket.
 
-![](https://files.readme.io/5c12c2f-image.png)
+![](/img/docs/5c12c2f-image.png)
 
 Remember to securely manage your KeyID and applicationKey to ensure the safety of your data in Backblaze B2 Cloud Storage.
 
@@ -198,7 +198,7 @@ Remember to securely manage your KeyID and applicationKey to ensure the safety o
 4. **Create a Dropbox Folder (Optional):**
    - Although not mandatory, it's advisable to create a dedicated folder in Dropbox for organizing the data synced from RunPod.
 
-![](https://files.readme.io/e73bced-image.png)
+![](/img/docs/e73bced-image.png)
 
 ### Transferring Data from RunPod to Dropbox
 
@@ -212,6 +212,6 @@ Remember to securely manage your KeyID and applicationKey to ensure the safety o
 3. **Start Data Sync:**
    - Click "Copy to Dropbox" to initiate the data syncing process. Your RunPod data will begin transferring to the specified location in Dropbox.
 
-![](https://files.readme.io/2281560-image.png)
+![](/img/docs/2281560-image.png)
 
 Ensure the safekeeping of your Dropbox Access Token to maintain the security of your data during the sync process.

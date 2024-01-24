@@ -1,5 +1,5 @@
 ---
-title: "Savings Plans"
+title: "Savings plans"
 description: "Cost savings for Your RunPod deployments."
 sidebar_position: 9
 ---
@@ -7,16 +7,16 @@ sidebar_position: 9
 Savings Plans, are a powerful cost-saving feature designed to optimize your RunPod experience.
 With Savings Plans, you can take advantage of upfront payments to unlock discounts on uninterrupted instances, enabling you to maximize cost efficiency and get the most out of specific card types.
 
-**Getting Started:**
+## Get started
 
 To start saving with RunPod's Savings Plans, ensure you have sufficient RunPod credits in your account.
 
 There are two ways to create a savings plan. From the pod dashboard, you can effortlessly add a Savings Plan to your existing running pod. Alternatively, you have the option to initiate a Savings Plan during the pod deployment process. Regularly check the "My Savings Plan" section to track your Savings Plans and associated pods.
 
-![](https://files.readme.io/f58bad9-image.png)
-![](https://files.readme.io/0eb087a-image.png)
+![](/img/docs/f58bad9-image.png)
+![](/img/docs/0eb087a-image.png)
 
-**Benefits for You:**
+## Benefits
 
 Reduced Costs: By paying upfront for a Savings Plan, you can enjoy discounted rates on uninterrupted instances. This translates into significant cost savings for your RunPod deployments.
 

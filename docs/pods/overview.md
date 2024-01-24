@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: Learn about Pods.
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 Pods are running container instances pulled from a container registry such as Docker Hub, GitHub Container Registry, Amazon Elastic Container Registry, or another compatible registry. Pods can be created from a template or deployed directly via the API and CLI tools.

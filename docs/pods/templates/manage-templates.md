@@ -18,7 +18,7 @@ Templates are used to launch images as a Pod: within a template, you define the 
 
 ### Web interface
 
-![](https://files.readme.io/8418b2b-image.png)
+![](/img/docs/8418b2b-image.png)
 
 ### cURL
 
@@ -37,7 +37,7 @@ Environment variables in RunPod templates are key-value pairs that are accessibl
 
 These variables can be used to pass configuration and secrets to your container. For example, you might use environment variables to store the path to a database or API keys that your application needs to function.
 
-![](https://files.readme.io/b7670dd-image.png)
+![](/img/docs/b7670dd-image.png)
 
 Environment variables are accessible within your pod; define a variable by setting a name with the `key` and then what it should contain with `value`.
 

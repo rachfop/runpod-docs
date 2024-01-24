@@ -7,4 +7,7 @@ This set of tutorials is meant to provide a deeper understanding of the tools th
 These tutorials help you understand how to use the RunPod platform to build and deploy your applications.
 
 While the documentation around the introduction section gives a holistic view and enough information to get started with RunPod, for more detailed information on the various of these tools or technologies, reach out to the source material.
-For example, if you come across an issue in your Docker container, using Docker's own documentation site will provide you with more information than what is provided here.
+
+- If you are looking for an understanding of Containers and Docker, see [Container overview](/tutorials/introduction/containers/overview).
+- If you are looking to run your first Pod with RunPod, see [Run your first Fast Stable Diffusion with Jupyter Notebook](/tutorials/pods/run-your-first).
+- For Serverless implementation, see [Run your first serverless endpoint with Stable Diffusion](/tutorials/serverless/run-your-first).

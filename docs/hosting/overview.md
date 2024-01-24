@@ -11,8 +11,8 @@ If you're interested in integrating your hardware into the RunPod ecosystem, fol
 
 ## How to Join as a Host:
 
-1. Check Eligibility: Make sure you adhere to our [minimum requirements](https://docs.runpod.io/docs/partner-requirements).
-2. Connect with Us: Currently, we onboard hosts through a manual vetting process.
+1. Check Eligibility: Make sure you adhere to our [minimum requirements](/hosting/partner-requirements).
+2. Connect with us: Currently, we onboard hosts through a manual vetting process.
    If you have high-quality machines that satisfy our hosting requirements, and at least 20 GPUs in total, please fill out [this form](https://share.hsforms.com/1GYpMeNlSQc6n11toAlgNngecykq).
    Then, contact us on discord [here](https://discord.gg/7nr9Jy9FYU).
 
@@ -28,4 +28,7 @@ If you're interested in integrating your hardware into the RunPod ecosystem, fol
 
 - Hosting Experience: As one of our trusted providers, you have access to a fully customized dashboard to manage your resources that you can leverage to deploy hardware and plan your expansion.
 
-- Rental Rates: We do not make utilization data publicly available. However, we are more than happy to provide statistics and information about popular GPU models when directly discussing with you. Furthermore, lots of different variables can impact occupancy. We are more than happy to provide you with in-dept data about how different hardware quality levels can impact your revenue.
+- Rental Rates: We do not make utilization data publicly available.
+However, we are more than happy to provide statistics and information about popular GPU models when directly discussing with you.
+Furthermore, lots of different variables can impact occupancy.
+We are more than happy to provide you with in-dept data about how different hardware quality levels can impact your revenue.

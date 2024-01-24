@@ -6,9 +6,10 @@ const FeatureList = [
   {
     title: "Pods",
     Svg: require("@site/static/img/home_1.svg").default,
+    url: "/pods/overview", // Add URL here
     description: (
       <>
-        <b>Pods</b>{" "}
+        <a href="/pods/overview"><b>Pods</b></a>{" "}
         offer fast deployment of container-based GPU instances, with Secure Cloud for high reliability and security, and
         Community Cloud for a secure peer-to-peer network.
       </>
@@ -17,9 +18,10 @@ const FeatureList = [
   {
     title: "Serverless",
     Svg: require("@site/static/img/home_2.svg").default,
+    url: "/serverless/overview", // Add URL here
     description: (
       <>
-        <b>Serverless</b>{" "}
+        <a href="/serverless/overview"><b>Serverless</b></a>{" "}
         service provides pay-per-second serverless computing with autoscaling, quick start times, and robust security in
         its Secure Cloud.
       </>
@@ -28,9 +30,10 @@ const FeatureList = [
   {
     title: "AI APIs",
     Svg: require("@site/static/img/home_3.svg").default,
+    url: "/ai-apis",
     description: (
       <>
-        <b>AI APIs</b>{" "}
+        <a href="ai-apis"><b>AI APIs</b></a>{" "}
         are scalable and managed services tailored for various applications like Dreambooth and Stable Diffusion,
         ensuring efficient handling of diverse workloads.
       </>
@@ -38,19 +41,22 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, url }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <a href={url}>
+          <Svg className={styles.featureSvg} role="img" />
+        </a>
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h2">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (

@@ -7,11 +7,10 @@ excerpt: "Create a new Serverless endpoint, or modify/delete existing ones."
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Creating/Modifying Serverless Endpoints
 
 `gpuIds`, `name`, and `templateId` are required arguments; all other arguments are optional, and default values will be used if unspecified.
 
-## Create a New Serverless Endpoint
+## Create a new Serverless Endpoint
 
 <Tabs>
   <TabItem value="curl" label="cURL" default>
@@ -79,7 +78,7 @@ mutation {
   </TabItem>
 </Tabs>
 
-## Modify an Existing Serverless Endpoint
+## Modify an existing Serverless Endpoint
 
 <Tabs>
   <TabItem value="curl" label="cURL" default>
@@ -129,7 +128,7 @@ mutation {
   </TabItem>
 </Tabs>
 
-# View Your Endpoints
+# View your Endpoints
 
 <Tabs>
   <TabItem value="curl" label="cURL" default>
@@ -198,7 +197,7 @@ query Endpoints {
   </TabItem>
 </Tabs>
 
-# Deleting Serverless Endpoints
+# Delete a Serverless Endpoints
 
 Note that your endpoint's min and max workers must both be set to zero for your call to work.
 

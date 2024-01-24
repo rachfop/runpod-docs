@@ -9,6 +9,7 @@ There are many ways to interact with RunPod:
 - Web interface
 - CLI
 - SDKs
+- GraphQL
 
 ## Web interface
 
@@ -24,3 +25,7 @@ All Pods come with `runpodctl` installed with a Pod-scoped API key, which makes 
 ## SDKs
 
 RunPod provides SDKs for Python and Go to for the RunPod API and serverless worker SDK.
+
+## GraphQL
+
+You can use [GraphQL](/graphql/manage-pods) to manage your Pods, Serverless, and more.
