@@ -1,5 +1,5 @@
 ---
-title: "Worker configurations"
+title: "Endpoint configurations"
 sidebar_position: 1
 ---
 
