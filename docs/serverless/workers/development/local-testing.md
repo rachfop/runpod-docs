@@ -6,7 +6,7 @@ sidebar_position: 1
 
 As you develop your handler, you will, of course, want to test it with inputs formatted similarly to what you will be sending in once deployed as a worker. The quickest way to run a test is to pass in your input as an argument when calling your handler file. Assuming your handler function is inside of a file called `your_handler.py` and your input is `{"input": {"prompt": "The quick brown fox jumps"}}` you would call your file like so:
 
-```curl Bash
+```curl
 python your_handler.py --test_input '{"input": {"prompt": "The quick brown fox jumps"}}'
 ```
 
