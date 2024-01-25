@@ -63,7 +63,6 @@ If your job is still processing, the response will indicate that. Here's an exam
 }
 ```
 
-This means you should wait a bit before checking again.
 
 ### Get Completed Job Status
 

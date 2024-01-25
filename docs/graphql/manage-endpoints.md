@@ -1,7 +1,6 @@
 ---
 title: "Manage Endpoints"
-slug: "create-serverless-endpoint"
-excerpt: "Create a new Serverless endpoint, or modify/delete existing ones."
+description: "Create a new Serverless endpoint, or modify/delete existing ones."
 ---
 
 import Tabs from '@theme/Tabs';
