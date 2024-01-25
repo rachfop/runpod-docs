@@ -25,6 +25,6 @@ runpod.serverless.start(
 )
 ```
 
-### Return Aggregate Stream
+### Return aggregate Stream
 
 By default, when a generator handler is running, the fractional outputs will only be available at the `/stream` endpoint, if you would also like the outputs to be available from the `/run` and `/runsync` endpoints you will need to set `return_aggregate_stream` to True when starting your handler.

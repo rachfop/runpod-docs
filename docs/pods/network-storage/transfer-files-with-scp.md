@@ -4,6 +4,7 @@ sidebar_position: 9
 ---
 
 ## Prerequisites
+
 :::note
 
 Your local machine must be running Linux or a [WSL instance](https://learn.microsoft.com/en-us/windows/wsl/about) in order to use rsync.
@@ -14,7 +15,6 @@ Your local machine must be running Linux or a [WSL instance](https://learn.micro
 
 ![](/img/docs/ae0ee09-image.png)
 
-
 ![](/img/docs/d00988d-image.png)
 
 1. Note the public IP address and external port from the SSH over exposed TCP command (you'll need these for the SCP/rsync commands).
@@ -24,8 +24,6 @@ Your local machine must be running Linux or a [WSL instance](https://learn.micro
 ## Transferring with SCP
 
 The general syntax for sending files to a Pod with SCP is as follows (execute this on your local machine, and replace the x's with your Pod's external TCP port and IP; for this example, they are 43201 and 194.26.196.6, respectively):
-
-
 
 ```shell
 scp -P xxxxx -i ~/.ssh/id_ed25519 /local/file/path root@xxx.xxx.xxx.xxx:/destination/file/path
@@ -39,27 +37,21 @@ If your private key file is in a location other than `~/.ssh/id_ed25519` or you'
 
 ![](/img/docs/1e471f2-3.png)
 
-
 If you want to receive a file from your Pod, switch the source and destination arguments:
 
 ![](/img/docs/51e282a-4.png)
-
 
 If you need to transfer a directory, use the `-r` flag to recursively copy files and subdirectories (this will follow any symbolic links encountered as well):
 
 ![](/img/docs/47d5c1c-5.png)
 
-
 ## Transferring with rsync
 
 The general syntax for sending files to a Pod with rsync is as follows (execute this on your local machine, and replace the x's with your Pod's external TCP port and IP):
 
-
-
-```shell 
+```shell
 rsync -e "ssh -p xxxxx" /source/file/path root@xxx.xxx.xxx.xxx:/destination/file/path
 ```
-
 
 Some helpful flags include:
 
@@ -75,11 +67,9 @@ Some helpful flags include:
 
 ![](/img/docs/b7e7dd5-6.png)
 
-
 If you want to receive a file from your Pod, switch the source and destination arguments:
 
 ![](/img/docs/4867182-7.png)
-
 
 To transfer the contents of a directory (without transferring the directory itself), use a trailing slash in the file path:
 

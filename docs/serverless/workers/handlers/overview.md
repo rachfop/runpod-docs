@@ -9,6 +9,16 @@ The Handler Function is responsible for processing submitted inputs and generati
 
 Example Handler Functions can be found within the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
 
+## Why use Handler Functions?
+
+Handler Functions offer a paradigm shift in how you approach backend code execution:
+
+- **Efficiency**: Focus on writing code that matters without worrying about the server lifecycle.
+- **Cost-Effective**: You only pay for the time your functions are running, not idle server time.
+- **Rapid Deployment**: Quickly update and deploy functions, enabling faster iteration and response to changes.
+
+Your Handler Function only accepts requests using your own account's API key, not any RunPod API key.
+
 ## Job input
 
 Before we look at the handler, it is essential first to understand what a job request input will look like; later, we will cover all of the input options in detail; for now, what is essential is that your handler should be expecting a JSON dictionary to be passed in. At a minimum, the input will be formatted as such:
@@ -45,7 +55,6 @@ runpod.serverless.start({"handler": handler})  # Required.
 
 Keep setup processes and functions outside of your handler function. For example, if you are running models make sure they are loaded into VRAM prior to calling `serverless.start` with your handler function.
 :::
-
 
 ### Development and deployment
 

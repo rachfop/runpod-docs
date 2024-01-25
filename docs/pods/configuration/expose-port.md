@@ -34,7 +34,7 @@ If your pod supports a public IP address, you can also expose your API over publ
 
 ![](/img/docs/49ebb9a-image.png)
 
-The only difference here is that you will receive an external port mapping and a public IP address to access your service. 
+The only difference here is that you will receive an external port mapping and a public IP address to access your service.
 For example, your connect menu may look something like this:
 
 ![](/img/docs/5e76c21-image.png)

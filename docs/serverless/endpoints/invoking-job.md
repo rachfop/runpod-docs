@@ -2,8 +2,6 @@
 title: Invoke a Job
 ---
 
-
-
 ## Asynchronous Endpoints
 
 Useful for long-running tasks. Submit a job and use the returned Job ID to check the status later.

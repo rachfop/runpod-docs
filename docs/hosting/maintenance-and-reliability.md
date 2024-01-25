@@ -18,11 +18,15 @@ Here are some things to keep in mind.
 
 RunPod aims to partner with datacenters that offer **99.99%** uptime.
 Reliability is currently calculated as follows:
+
 <!-- the $ is for math equations -->
+
 $( total minutes + small buffer ) / total minutes in interval$
 
 This means that if you have 30 minutes of network downtime on the first of the month, your reliability will be calculated as:
+
 <!-- the $ is for math equations -->
+
 $( 43200 - 30 + 10 ) / 43200 = 99.95%$
 
 Based on approximately 43200 minutes per month and a 10 minute buffer.

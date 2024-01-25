@@ -9,7 +9,6 @@ You will need to create an account or get invited by a team member to use RunPod
 
 Sign up for an account at [RunPod.io](https://www.runpod.io).
 
-
 ### Convert personal account to a team account
 
 You can convert a personal account to a team account at anytime.
@@ -23,7 +22,6 @@ You can convert a personal account to a team account at anytime.
 2. Select **Join Team**.
 
 For information on how to send an invitation, see [Invite a user](#invite-a-user).
-
 
 ### Invite a user
 

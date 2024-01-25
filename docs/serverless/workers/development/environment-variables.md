@@ -8,7 +8,6 @@ This section focuses on how to use environment variables to facilitate the uploa
 
 This will go through the process of writing Python code for the uploading and setting the necessary environment variables in the Web interface.
 
-
 ## Prerequistes
 
 - Ensure the RunPod Python library is installed: `pip install runpod`.
@@ -49,7 +48,7 @@ Using environment variables securely passes the necessary credentials and config
    - `BUCKET_ENDPOINT_URL`
    - `BUCKET_ACCESS_KEY_ID`
    - `BUCKET_SECRET_ACCESS_KEY`
-   Ensure that your `BUCKET_ENDPOINT_URL` includes the bucket name (e.g., `https://your-bucket-name.nyc3.digitaloceanspaces.com`, `https://your-bucket-name.nyc3.digitaloceanspaces.com`).
+     Ensure that your `BUCKET_ENDPOINT_URL` includes the bucket name (e.g., `https://your-bucket-name.nyc3.digitaloceanspaces.com`, `https://your-bucket-name.nyc3.digitaloceanspaces.com`).
 
 ## Testing Your API
 

@@ -31,7 +31,9 @@ if response.status_code == 200:
     # Writing to a markdown file
     # relative path
     # os.path.join(os.path.dirname(__file__), "gpu-types.md")
-    file_path = os.path.join(os.path.dirname(__file__), "../docs/references/gpu-types.md")
+    file_path = os.path.join(
+        os.path.dirname(__file__), "../docs/references/gpu-types.md"
+    )
 
     with open(file_path, "w") as file:
         # Write the table headers

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Once you have a Handler Function, the next step will be to package it into a Docker image that can be deployed as a scalable serverless worker. This is accomplished by defining a docker file to import everything required to run your handler. Example docker files are in the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
 
-_Unfamiliar with Docker? Check out their [overview page](https://docs.docker.com/get-started/overview/)._
+_Unfamiliar with Docker? Check out their [overview page](https://docs.docker.com/get-started/overview/) or see out guide on [Containers](/category/containers)._
 
 ## Docker File
 
@@ -37,7 +37,7 @@ CMD [ "python", "-u", "/handler.py" ]
 ```
 
 > 🚧 If your handler requires external files such as model weights, be sure to cache them into your docker image. You are striving for a completly self contained worker that does not need to download or fetch external files to run.
->
+
 ## Continuous integrations
 
 Integrate your Handler Functions through continuous integration.
@@ -66,7 +66,6 @@ You can add the following to your workflow file:
 If `test-filename` is omitted, the Test Runner Action attempts to look for a test file at `.github/tests.json`.
 
 You can find a working example in the [Worker Template repository](https://github.com/runpod-workers/worker-template/tree/main/.github).
-
 
 ## Other considerations
 

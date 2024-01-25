@@ -6,6 +6,15 @@ description: Learn to persist data outside of containers.
 
 In the previous step, you created a Dockerfile and executed a command. Now, you'll learn how to persist data outside of containers.
 
+:::note
+
+This walk through teach you how to persist data outside of container.
+RunPod has the same concept used for attaching a Network Volume to your Pod.
+
+Consult the documentation on [attaching a Network Volume to your Pod](/pods/network-storage/create-network-volume).
+
+:::
+
 ## Why persist data outside of a container?
 
 The key goal is to have data persist across multiple container runs and removals.
@@ -87,3 +96,10 @@ This runs a new busybox container and also mounts the `date-volume`.
 - This allows the new container to access the persistent date file that the first container wrote.
 - The `cat /data/current_date.txt` command prints out the file with the date output from the first container.
 - The `--rm`flag removes the container after running so we don't accumulate stopped containers.
+
+:::note
+
+Remember, this is a general tutorial on Docker.
+These concepts will help give you a better understanding on working with RunPod.
+
+:::

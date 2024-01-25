@@ -4,7 +4,6 @@ description: "Comprehensive guide on interacting with models using RunPod's API 
 sidebar_position: 2
 ---
 
-
 ## Endpoint Operations
 
 RunPod's endpoints facilitate submitting jobs and retrieving outputs. Endpoints available to all users are:

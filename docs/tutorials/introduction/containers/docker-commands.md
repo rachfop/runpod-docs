@@ -49,8 +49,15 @@ docker rm         # Remove/delete container
 `docker build` - Builds a Docker image by reading build instructions from a Dockerfile.
 
 ```command
-docker build     # Build image from Dockerfile
+docker build                         # Build image from Dockerfile
+docker build --platform=linux/amd64  # Build for specific architecture
 ```
+
+:::note
+
+For the purposes of using Docker with RunPod, you should ensure your build command uses the `--platform=linux/amd64` flag to build for the correct architecture.
+
+:::
 
 ## Volumes
 

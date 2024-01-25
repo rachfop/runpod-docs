@@ -7,19 +7,16 @@ The basic terminal SSH access that RunPod exposes is not a full SSH connection a
 
 ## Setup
 
-1. Generate your public/private SSH key pair on your local machine with `ssh-keygen -t ed25519 -C "your_email@example.com"`. This will save your public/private key pair to `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519`, respectively.  
-:::note
-if you're using command prompt in Windows rather than the Linux terminal or WSL, your public/private key pair will be saved to `C:\users\{yourUserAccount}\.ssh\id_ed25519.pub` and `C:\users\{yourUserAccount}\.ssh\id_ed25519`, respectively.
-:::
+1. Generate your public/private SSH key pair on your local machine with `ssh-keygen -t ed25519 -C "your_email@example.com"`. This will save your public/private key pair to `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519`, respectively.\
+   :::note
+   if you're using command prompt in Windows rather than the Linux terminal or WSL, your public/private key pair will be saved to `C:\users\{yourUserAccount}\.ssh\id_ed25519.pub` and `C:\users\{yourUserAccount}\.ssh\id_ed25519`, respectively.
+   :::
 
 ![](/img/docs/4655a01-1.png)
-
-
 
 1. Add your public key to your [RunPod user settings](https://www.runpod.io/console/user/settings).
 
 ![](/img/docs/4972691-2.png)
-
 
 ![](/img/docs/c340553-image.png)
 
@@ -28,12 +25,9 @@ if you're using command prompt in Windows rather than the Linux terminal or WSL,
 - Your Pod supports a public IP, if you're deploying in Community Cloud.
 - An SSH daemon is started. If you're using a RunPod official template such as RunPod Stable Diffusion, you don't need to take any additional steps. If you're using a custom template, make sure your template has TCP port 22 exposed and use the following Docker command. If you have an existing start command, replace `sleep infinity` at the end with your existing command:
 
-
-
 ```bash
 bash -c 'apt update;DEBIAN_FRONTEND=noninteractive apt-get install openssh-server -y;mkdir -p ~/.ssh;cd $_;chmod 700 ~/.ssh;echo "$PUBLIC_KEY" >> authorized_keys;chmod 700 authorized_keys;service ssh start;sleep infinity'
 ```
-
 
 ![](/img/docs/97823c6-image.png)
 
@@ -43,7 +37,7 @@ Once your Pod is done initializing, you'll be able to SSH into it by running the
 
 - if you're using the Windows Command Prompt rather than the Linux terminal or WSL, and you've used the default key location when generating your public/private key pair (i.e., you didn't specify a different file path when prompted), you'll need to modify the file path in the provided SSH command after the `-i` flag to `C:\users\{yourUserAccount}\.ssh\id_ed25519`.
 - If you've saved your key to a location other than the default, specify that path you chose when generating your key pair after the `-i` flag instead.
-:::
+  :::
 
 ![](/img/docs/3d51ed8-image.png)
 
@@ -59,7 +53,6 @@ If you're being prompted for a password when you attempt to connect, something i
 - Specifying an incorrect file path to your private key file:
 
 ![](/img/docs/10cbfa6-image.png)
-
 
 - Attempting to use a private key that other users on the machine have permissions for:
 

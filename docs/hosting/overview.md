@@ -29,6 +29,6 @@ If you're interested in integrating your hardware into the RunPod ecosystem, fol
 - Hosting Experience: As one of our trusted providers, you have access to a fully customized dashboard to manage your resources that you can leverage to deploy hardware and plan your expansion.
 
 - Rental Rates: We do not make utilization data publicly available.
-However, we are more than happy to provide statistics and information about popular GPU models when directly discussing with you.
-Furthermore, lots of different variables can impact occupancy.
-We are more than happy to provide you with in-dept data about how different hardware quality levels can impact your revenue.
+  However, we are more than happy to provide statistics and information about popular GPU models when directly discussing with you.
+  Furthermore, lots of different variables can impact occupancy.
+  We are more than happy to provide you with in-dept data about how different hardware quality levels can impact your revenue.
