@@ -14,13 +14,13 @@ The basic terminal SSH access that RunPod exposes is not a full SSH connection a
 
 ![](/img/docs/4655a01-1.png)
 
-1. Add your public key to your [RunPod user settings](https://www.runpod.io/console/user/settings).
+2. Add your public key to your [RunPod user settings](https://www.runpod.io/console/user/settings).
 
 ![](/img/docs/4972691-2.png)
 
 ![](/img/docs/c340553-image.png)
 
-1. Start your Pod. Make sure of the following things:
+3. Start your Pod. Make sure of the following things:
 
 - Your Pod supports a public IP, if you're deploying in Community Cloud.
 - An SSH daemon is started. If you're using a RunPod official template such as RunPod Stable Diffusion, you don't need to take any additional steps. If you're using a custom template, make sure your template has TCP port 22 exposed and use the following Docker command. If you have an existing start command, replace `sleep infinity` at the end with your existing command:
