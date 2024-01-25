@@ -17,7 +17,7 @@
         },
         {
             "source": "/docs/expose-ports",
-            "destination": "/pods/configuration/expose-port",
+            "destination": "/pods/configuration/expose-ports",
             "permanent": true
         },
         {
@@ -42,17 +42,17 @@
         },
         {
             "source": "/docs/override-my-public-key",
-            "destination": "/pods/configuration/override-public-key",
+            "destination": "/pods/configuration/override-public-keys",
             "permanent": true
         },
         {
             "source": "/docs/create-a-network-volume",
-            "destination": "/pods/network-storage/create-network-volume",
+            "destination": "/pods/network-storage/create-network-volumes",
             "permanent": true
         },
         {
             "source": "/docs/sync-my-volume-to-a-cloud-provider",
-            "destination": "/pods/network-storage/sync-volume",
+            "destination": "/pods/network-storage/sync-volumes",
             "permanent": true
         },
         {
@@ -122,7 +122,7 @@
         },
         {
             "source": "/docs/savings-plans",
-            "destination": "/pods/savings-plan",
+            "destination": "/pods/savings-plans",
             "permanent": true
         },
         {
@@ -217,12 +217,12 @@
         },
         {
             "source": "/docs/using-your-api-copy",
-            "destination": "/serverless/endpoints/invoking-job",
+            "destination": "/serverless/endpoints/invoke-jobs",
             "permanent": true
         },
         {
             "source": "/docs/testing-your-apis-response-time",
-            "destination": "/serverless/workers/development/test-response-time",
+            "destination": "/serverless/workers/development/test-response-times",
             "permanent": true
         },
         {

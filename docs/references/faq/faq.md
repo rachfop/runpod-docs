@@ -50,7 +50,7 @@ Your volume disk is retained even if your Spot instance is interrupted.
 
 Savings Plans are a way for you to pay up-front and get a discount for it.
 This is great for when you know you will need prolonged access to compute.
-You can learn more on the about [Savings Plans here](/pods/savings-plan).
+You can learn more on the about [Savings Plans here](/pods/savings-plans).
 
 ## Billing
 

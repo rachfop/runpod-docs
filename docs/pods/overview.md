@@ -18,7 +18,7 @@ You can jump straight to a running Pod by starting from a [template](/pods/templ
 - System Disk Size
 - Start Command
 - [Environment Variables](/pods/references/environment-variables)
-- [Expose HTTP/TCP ports](/pods/configuration/expose-port)
+- [Expose HTTP/TCP ports](/pods/configuration/expose-ports)
 - [Persistent Storage Options](/category/network-storage)
 
 To get started, see how to [Choose a Pod](/pods/choose-a-pod) then see the instructions on [Manage Pods](/pods/manage-pods).
