@@ -63,4 +63,4 @@ Otherwise, the worker will exit with a zero exit code.
 This can be used to check if the worker ran successfully, for example, in a CI/CD pipeline.
 
 - For information on testing your handler locally, see [Local testing](/serverless/workers/development/local-testing).
-- For information on setting a continuous integration pipeline, see [Continuous integration](/serverless/workers/deploy/ci).
+- For information on setting a continuous integration pipeline, see [Continuous integration](/serverless/workers/deploy).

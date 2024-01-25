@@ -41,4 +41,4 @@ These variables can be used to pass configuration and secrets to your container.
 
 Environment variables are accessible within your pod; define a variable by setting a name with the `key` and then what it should contain with `value`.
 
-RunPod also provides a set of predefined [environment variables](/pods/environment-variables) that provide information about the pod, such as the unique identifier for your pod (`RUNPOD_POD_ID`), the API key used to make RunPod API calls to the specific pod (`RUNPOD_API_KEY`), the name of the host server the pod is running on (`RUNPOD_POD_HOSTNAME`), and more.
+RunPod also provides a set of predefined [environment variables](/pods/references/environment-variables) that provide information about the pod, such as the unique identifier for your pod (`RUNPOD_POD_ID`), the API key used to make RunPod API calls to the specific pod (`RUNPOD_API_KEY`), the name of the host server the pod is running on (`RUNPOD_POD_HOSTNAME`), and more.

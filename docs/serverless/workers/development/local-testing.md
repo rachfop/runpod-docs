@@ -1,5 +1,5 @@
 ---
-title: Local testing
+title: Test locally
 sidebar_position: 1
 ---
 

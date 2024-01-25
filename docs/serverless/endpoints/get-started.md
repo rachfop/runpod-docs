@@ -61,5 +61,5 @@ Depending on any modifications you made to your handler, you may need to modify 
 
 Now that you have successfully launched an endpoint using our template, you can:
 
-- [Customize the handler](/serverless/handlers/overview)
-- [Send requests to the Endpoint](/serverless/serverless-functions/serverless-usage)
+- [Customize the handler](/serverless/workers/handlers/overview)
+- [Send requests to the Endpoint](/serverless/endpoints/overview)
