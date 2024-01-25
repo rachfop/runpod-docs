@@ -78,7 +78,7 @@ const config = {
   themeConfig: {
     algolia: {
       appId: "LZTDWL431O",
-      apiKey: "1e83cdfb201f930cb2a80e8b0fd0401a",
+      apiKey: "42b27b88e9b1049fbf9a678640aca766",
       indexName: "runpod-vercel",
       // insights: true,
     },
