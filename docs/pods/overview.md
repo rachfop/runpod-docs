@@ -12,7 +12,8 @@ When building an image for RunPod, use the flag `--platform linux/amd64,linux/ar
 
 :::
 
-You can jump straight to a running Pod by starting from a [template](pods/templates/overview). For more customization, you can configure the following:
+You can jump straight to a running Pod by starting from a [template](/pods/templates/overview). For more customization, you can configure the following:
+
 - [GPU Type](/references/gpu-types) and Quantity
 - System Disk Size
 - Start Command

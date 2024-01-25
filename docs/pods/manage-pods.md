@@ -12,55 +12,56 @@ import TabItem from '@theme/TabItem';
 
 <Tabs groupId="interface">
 
-  <TabItem value="web-ui" label="Web" default>
-  1. Navigate to the **Pods** page. 
+<TabItem value="web-ui" label="Web" default>
+  1. Navigate to the **Pods** page.
   2. Click the **+ New Pod** button.
   3. Choose your Pod and click **Deploy**.
   :::tip
 
-  If you're not sure which Pod meets your needs, see [Choose a Pod](/pods/choose-a-pod).
+If you're not sure which Pod meets your needs, see [Choose a Pod](/pods/choose-a-pod).
 
-  :::
-  4. (Optional) Choose a [template](/pods/templates/overview).
-  5. Click **Continue**.
-  6. Verify your Pod configuration and click **Deploy**.
+:::
+4. (Optional) Choose a [template](/pods/templates/overview).
+5. Click **Continue**.
+6. Verify your Pod configuration and click **Deploy**.
 
-  Next, RunPod builds your Pod. You'll start paying for the Pod as soon as it's built.
-  </TabItem>
+Next, RunPod builds your Pod. You'll start paying for the Pod as soon as it's built.
+</TabItem>
 
 <TabItem value="cli" label="Command line">
   To start a single Pod, enter the command `runpodctl start pod`. You can pass the environment variable `RUNPOD_POD_ID` to identify each Pod.
 
-  ```bash
-  runpodctl start pod $RUNPOD_POD_ID
-  ```
+```bash
+runpodctl start pod $RUNPOD_POD_ID
+```
 
-  To start Pods in bulk, enter the command `runpodctl create pods`.
+To start Pods in bulk, enter the command `runpodctl create pods`.
 
-  For example, to start up to 10 Pods with the name `bulk-task` on 3070 and 3080 GPUs and run a bash command, enter the following command.
+For example, to start up to 10 Pods with the name `bulk-task` on 3070 and 3080 GPUs and run a bash command, enter the following command.
 
-  ```bash
-  runpodctl create pods \
-    --name bulk-task \
-    --gpuType "NVIDIA GeForce RTX 3070,NVIDIA GeForce RTX 3080" \
-    --imageName "runpod/your-image-name" \ 
-    --containerDiskSize 10 \ 
-    --volumeSize 0 \ 
-    --mem 1 \
-  --args "bash -c 'your-bash-command'
-  ```
-  </TabItem>
+```bash
+runpodctl create pods \
+  --name bulk-task \
+  --gpuType "NVIDIA GeForce RTX 3070,NVIDIA GeForce RTX 3080" \
+  --imageName "runpod/your-image-name" \ 
+  --containerDiskSize 10 \ 
+  --volumeSize 0 \ 
+  --mem 1 \
+--args "bash -c 'your-bash-command'
+```
+
+</TabItem>
 </Tabs>
 ## Stop a Pod
 
 <Tabs groupId="interface">
 
-  <TabItem value="web-ui" label="Web" default>
-  1. Click the stop icon. 
+<TabItem value="web-ui" label="Web" default>
+  1. Click the stop icon.
   2. Confirm by clicking the **Stop Pod** button.
   </TabItem>
 
-  <TabItem value="cli" label="Command line">
+<TabItem value="cli" label="Command line">
     To stop a Pod, enter the following command.
     ```bash
     runpodctl stop pod $RUNPOD_POD_ID
@@ -81,7 +82,8 @@ import TabItem from '@theme/TabItem';
           `nohup` ensures the process continues running if you close the web terminal window.
         </TabItem>
       </Tabs>
-  </TabItem>
+
+</TabItem>
 
 </Tabs>
 
@@ -101,14 +103,14 @@ Terminating a Pod permanently deletes all data outside your [network volume](/po
 
 <Tabs groupId="interface">
 
-  <TabItem value="web-ui" label="Web" default>
+<TabItem value="web-ui" label="Web" default>
     1. Click the hamburger menu at the bottom of the Pod you want to terminate.
     2. Click **Terminate Pod**.
-    3. Confirm by clicking the **Yes** button. 
+    3. Confirm by clicking the **Yes** button.
   </TabItem>
 
-  <TabItem value="cli" label="Command line">
-    To remove a single Pod, enter the following command. 
+<TabItem value="cli" label="Command line">
+    To remove a single Pod, enter the following command.
     ```bash
     runpodctl remove pod $RUNPOD_POD_ID
     ```
@@ -118,7 +120,8 @@ Terminating a Pod permanently deletes all data outside your [network volume](/po
     ```bash
     runpodctl remove pods my-bulk-task --podCount 40
     ```
-  </TabItem>
+
+</TabItem>
 
 </Tabs>
 

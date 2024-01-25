@@ -1,11 +1,10 @@
 ---
 title: Handling Errors
-slug: "handler-error-handling"
-excerpt: "Effective strategies for managing errors in job processing with RunPod."
+description: "Effective strategies for managing errors in job processing with RunPod."
 sidebar_position: 4
 ---
 
-When an exception occurs in your handler function, the RunPod SDK automatically captures it, marking the job status as "FAILED" and returning the exception details in the job results.
+When an exception occurs in your handler function, the RunPod SDK automatically captures it, marking the job status as `FAILED` and returning the exception details in the job results.
 
 ## Implementing custom error responses
 
