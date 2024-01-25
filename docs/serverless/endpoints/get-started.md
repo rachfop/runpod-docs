@@ -53,7 +53,7 @@ Where `YOUR_ENDPOINT` is the name of your Endpoint and `YOUR_API_KEY` is your AP
 
 :::note
 
-Depending on any modifications you made to your handler, you may need to modify the request.
+Depending on any modifications you made to your Handler Function, you may need to modify the request.
 
 :::
 

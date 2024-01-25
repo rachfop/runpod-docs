@@ -5,7 +5,7 @@ sidebar_position: 1
 hidden: false
 ---
 
-The Handler Function is responsible for processing submitted inputs and generating the resulting output. When developing your Handler, you can do so locally on your PC or remotely on a RunPod GPU instance.
+The Handler Function is responsible for processing submitted inputs and generating the resulting output. When developing your Handler Function, you can do so locally on your PC or remotely on a RunPod GPU instance.
 
 Example Handler Functions can be found within the [repos of our runpod-workers](https://github.com/orgs/runpod-workers/repositories).
 
@@ -21,7 +21,7 @@ Your Handler Function only accepts requests using your own account's API key, no
 
 ## Job input
 
-Before we look at the handler, it is essential first to understand what a job request input will look like; later, we will cover all of the input options in detail; for now, what is essential is that your handler should be expecting a JSON dictionary to be passed in. At a minimum, the input will be formatted as such:
+Before we look at the Handler Function, it is essential first to understand what a job request input will look like; later, we will cover all of the input options in detail; for now, what is essential is that your handler should be expecting a JSON dictionary to be passed in. At a minimum, the input will be formatted as such:
 
 ```json
 {

@@ -10,7 +10,7 @@ You'll also have a basic understanding of how to customize the handler for your 
 
 ## Prerequisites
 
-This tutorial presumes you have an understanding of the terminal and can execute commands from your terminal.
+This section presumes you have an understanding of the terminal and can execute commands from your terminal.
 
 ### RunPod
 
@@ -30,7 +30,7 @@ To build your Docker image, you'll need the following:
 
 To clone the `worker-template` repo, you'll need access to the following:
 
-- Git Installed
+- Git installed
 - Permissions to clone GitHub repos
 
 ## Build and push your Docker image
