@@ -4,19 +4,13 @@ description: Learn to export your Pod's data.
 sidebar_position: 6
 ---
 
-You can export your Pod's data to one of the following cloud providers:
+You can export your Pod's data to any of the following cloud providers:
 
-RunPod allows you to export your data to various cloud storage services. Here are the options:
-
-1. **Amazon S3**: You can send data from RunPod to AWS S3 by accessing the CloudSync section in RunPod, entering your Access Key, Secret Access Key, and bucket information, and initiating the data transfer.
-
-2. **Google Cloud Storage**: You can set up Google Cloud Storage and transfer data from RunPod by providing your Service Account JSON key and specifying the destination path in your bucket. [Source](https://docs.runpod.io/docs/transfer-data)
-
-3. **Microsoft Azure Blob Storage**: You can create a storage account in Azure and transfer data from RunPod by entering your account name, account key, and desired path. [Source](https://docs.runpod.io/docs/microsoft-azure-blob-storage)
-
-4. **Dropbox**: You can send files to Dropbox through RunPod Cloud Sync by creating an app on the DBX Platform, generating an access token, and entering your Access Token and the remote path to send the data to. [Source](https://docs.runpod.io/docs/dropbox)
-
-5. **Backblaze B2 Cloud Storage**: You can set up a bucket in Backblaze and transfer data from RunPod by entering your KeyID, applicationKey, and bucket name. [Source](https://docs.runpod.io/docs/backblaze-b2-cloud-storage)
+- Amazon S3
+- Google Cloud Storage
+- Microsoft Azure Blob Storage
+- Dropbox
+- Backblaze B2 Cloud Storage
 
 Remember to keep your keys and access tokens confidential to maintain the security of your resources.
 

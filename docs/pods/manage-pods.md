@@ -10,91 +10,127 @@ import TabItem from '@theme/TabItem';
 
 :::note
 
-When building a docker image for RunPod be sure to use the flag `--platform linux/amd64,linux/arm64` to ensure it's compatible with the platform.
+When building a Docker image for RunPod, use the flag `--platform linux/amd64,linux/arm64` to ensure your image is compatible with the platform.
 
 :::
 
 ## Start a Pod
 
-### Web interface
+<Tabs groupId="interface">
 
-<!-- instructions for Web interface -->
+  <TabItem value="web-ui" label="Web" default>
+  1. Navigate to the **Pods** page. 
+  2. Click the **+ New Pod** button.
+  3. Choose your Pod and click **Deploy**.
+  :::tip
 
-### CLI
+  If you're not sure which Pod meets your needs, see [Choose a Pod](/pods/choose-a-pod).
 
-You can pass the environment variable `RUNPOD_POD_ID` to identify each Pod.
+  :::
+  4. (Optional) Choose a [template](/pods/templates/overview).
+  5. Click **Continue**.
+  6. Verify your Pod configuration and click **Deploy**.
 
-```bash
-runpodctl start pod $RUNPOD_POD_ID
-```
-
-You can also start a Pods in bulk.
-
-To start 10 pods with name `my-bulk-task`.
-
-```
-runpodctl create pods --name my-bulk-task --gpuType "NVIDIA GeForce RTX 3070,NVIDIA GeForce RTX 3080" --imageName "runpod/cool-stuff" --containerDiskSize 10 --volumeSize 0 --mem 1 --args "bash -c 'bash command I want to run; runpodctl remove pod \$RUNPOD_POD_ID;'" --env "KEY1=VAL1" --env "KEY2=VAL2" --podCount 10
-```
-
-This will create up to 10 pods on 3070 and 3080 GPUs that will run a bash command and then terminate themselves automatically when the bash command is done running.
-
-## Stop a Pod
-
-### Web interface
-
-<!-- instructions for Web interface -->
-
-### CLI
-
-```bash
-runpodctl stop pod $RUNPOD_POD_ID
-```
-
-You can also stop a Pod after a specific amount of time.
-
-<Tabs>
-  <TabItem value="ssh" label="SSH">
-    ```bash
-    sleep 2h; runpodctl stop pod $RUNPOD_POD_ID &
-    ```
+  Next, RunPod builds your Pod. You'll start paying for the Pod as soon as it's built.
   </TabItem>
-  <TabItem value="web-terminal" label="Web Terminal">
-    ```bash
-    nohup bash -c "sleep 2h; runpodctl stop pod $RUNPOD_POD_ID" &
-    ```
+
+<TabItem value="cli" label="Command line">
+  To start a single Pod, enter the command `runpodctl start pod`. You can pass the environment variable `RUNPOD_POD_ID` to identify each Pod.
+
+  ```bash
+  runpodctl start pod $RUNPOD_POD_ID
+  ```
+
+  To start Pods in bulk, enter the command `runpodctl create pods`.
+
+  For example, to start up to 10 Pods with the name `bulk-task` on 3070 and 3080 GPUs and run a bash command, enter the following command.
+
+  ```bash
+  runpodctl create pods \
+    --name bulk-task \
+    --gpuType "NVIDIA GeForce RTX 3070,NVIDIA GeForce RTX 3080" \
+    --imageName "runpod/your-image-name" \ 
+    --containerDiskSize 10 \ 
+    --volumeSize 0 \ 
+    --mem 1 \
+  --args "bash -c 'your-bash-command'
+  ```
   </TabItem>
 </Tabs>
+## Stop a Pod
 
-This command sleeps for 2 hours (change `2h` to whatever you want), and then stops the Pod. `nohup` ensures the process won't terminate if you close the web terminal window.
-Keep in mind that you will still incur disk fees on a stopped Pod.
+<Tabs groupId="interface">
+
+  <TabItem value="web-ui" label="Web" default>
+  1. Click the stop icon. 
+  2. Confirm by clicking the **Stop Pod** button.
+  </TabItem>
+
+  <TabItem value="cli" label="Command line">
+    To stop a Pod, enter the following command.
+    ```bash
+    runpodctl stop pod $RUNPOD_POD_ID
+    ```
+
+    You can also stop a Pod after a specific amount of time. For example, the following command sleeps for 2 hours, and then stops the Pod.
+
+      <Tabs>
+        <TabItem value="ssh" label="SSH">
+          ```bash
+          sleep 2h; runpodctl stop pod $RUNPOD_POD_ID &
+          ```
+        </TabItem>
+        <TabItem value="web-terminal" label="Web Terminal">
+          ```bash
+          nohup bash -c "sleep 2h; runpodctl stop pod $RUNPOD_POD_ID" &          
+          ```
+          `nohup` ensures the process continues running if you close the web terminal window.
+        </TabItem>
+      </Tabs>
+  </TabItem>
+
+</Tabs>
+
+:::warning
+
+You are charged for storing idle Pods. If you do not need to store your Pod, be sure to terminate it next.
+
+:::
 
 ## Terminate a Pod
 
-### Web interface
+:::danger
 
-<!-- instructions for Web interface -->
+Terminating a Pod permanently deletes all data outside your [network volume](/pods/network-storage/create-network-volume). Be sure you've saved any data you want to access again.
 
-### CLI
+:::
 
-```bash
-runpodctl remove pod $RUNPOD_POD_ID
-```
+<Tabs groupId="interface">
 
-You can also remove Pods in bulk.
+  <TabItem value="web-ui" label="Web" default>
+    1. Click the hamburger menu at the bottom of the Pod you want to terminate.
+    2. Click **Terminate Pod**.
+    3. Confirm by clicking the **Yes** button. 
+  </TabItem>
 
-```bash
-runpodctl remove pods my-bulk-task --podCount 40
-```
+  <TabItem value="cli" label="Command line">
+    To remove a single Pod, enter the following command. 
+    ```bash
+    runpodctl remove pod $RUNPOD_POD_ID
+    ```
 
-This command will terminate up to 40 pods with the name "my-bulk-task".
+    You can also remove Pods in bulk. For example, the following command terminates up to 40 pods with the name `my-bulk-task`.
+
+    ```bash
+    runpodctl remove pods my-bulk-task --podCount 40
+    ```
+  </TabItem>
+
+</Tabs>
 
 ## List Pods
 
-### Web interface
-
-<!-- instructions for Web interface -->
-
-### CLI
+If you're using the command line, enter the following command to list your pods.
 
 ```bash
 runpodctl get pod
