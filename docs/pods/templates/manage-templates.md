@@ -33,12 +33,11 @@ curl --request POST \
 
 ### Environment variables
 
-Environment variables in RunPod templates are key-value pairs that are accessible within your pod. You can define a variable by setting a name with the `key` and then what it should contain with the `value`.
+Environment variables in RunPod templates are key-value pairs that are accessible within your pod. Define a variable by setting a name with the `key` and then what it should contain with the `value`.
 
-These variables can be used to pass configuration and secrets to your container. For example, you might use environment variables to store the path to a database or API keys that your application needs to function.
+Use environment variables to pass configuration settings and secrets to your container. For example, environment variables can store the path to a database or API keys used by your application.
 
 ![](/img/docs/b7670dd-image.png)
 
-Environment variables are accessible within your pod; define a variable by setting a name with the `key` and then what it should contain with `value`.
 
 RunPod also provides a set of predefined [environment variables](/pods/environment-variables) that provide information about the pod, such as the unique identifier for your pod (`RUNPOD_POD_ID`), the API key used to make RunPod API calls to the specific pod (`RUNPOD_API_KEY`), the name of the host server the pod is running on (`RUNPOD_POD_HOSTNAME`), and more.

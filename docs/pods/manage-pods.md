@@ -8,12 +8,6 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-:::note
-
-When building a Docker image for RunPod, use the flag `--platform linux/amd64,linux/arm64` to ensure your image is compatible with the platform.
-
-:::
-
 ## Start a Pod
 
 <Tabs groupId="interface">
@@ -80,7 +74,7 @@ When building a Docker image for RunPod, use the flag `--platform linux/amd64,li
           sleep 2h; runpodctl stop pod $RUNPOD_POD_ID &
           ```
         </TabItem>
-        <TabItem value="web-terminal" label="Web Terminal">
+        <TabItem value="web-terminal" label="Web terminal">
           ```bash
           nohup bash -c "sleep 2h; runpodctl stop pod $RUNPOD_POD_ID" &          
           ```
