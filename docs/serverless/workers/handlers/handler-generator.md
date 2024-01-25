@@ -1,8 +1,7 @@
 ---
 title: "Generator Handler"
-slug: "handler-generator"
-excerpt: "A handler that can stream fractional results."
-sidebar_position: 3
+description: "A handler that can stream fractional results."
+sidebar_position: 2
 ---
 
 RunPod provides a robust streaming feature that enables users to receive real-time updates on job outputs, mainly when dealing with Language Model tasks. We support two types of streaming generator functions: regular generator and async generator.

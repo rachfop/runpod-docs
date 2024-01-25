@@ -1,7 +1,6 @@
 ---
 title: Handling Errors
-slug: "handler-error-handling"
-excerpt: "Effective strategies for managing errors in job processing with RunPod."
+description: "Effective strategies for managing errors in job processing with RunPod."
 sidebar_position: 4
 ---
 

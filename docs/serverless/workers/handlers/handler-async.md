@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous Handler"
 id: "handler-async"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 RunPod supports the use of asynchronous handlers, enabling efficient handling of tasks that benefit from non-blocking operations. This feature is particularly useful for tasks like processing large datasets, interacting with APIs, or handling I/O-bound operations.
